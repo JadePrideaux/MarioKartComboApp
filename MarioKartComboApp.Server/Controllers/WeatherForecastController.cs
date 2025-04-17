@@ -1,3 +1,4 @@
+using MarioKartComboApp.Server.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MarioKartComboApp.Server.Controllers;

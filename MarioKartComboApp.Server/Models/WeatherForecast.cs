@@ -1,4 +1,4 @@
-namespace MarioKartComboApp.Server
+namespace MarioKartComboApp.Server.Models
 {
     public class WeatherForecast
     {
