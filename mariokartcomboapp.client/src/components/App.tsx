@@ -1,22 +1,38 @@
 import { useEffect, useState } from "react";
 import "../styles/App.css";
 
-interface Forecast {
-  date: string;
-  temperatureC: number;
-  temperatureF: number;
-  summary: string;
+interface Combo {
+  // (Dicts are serialised into JSON as an object)
+  mkComponents: {
+    [key: string]: {
+      name: string;
+      type: string;
+    };
+  };
+  stats: {
+    [key: string]: number;
+  };
 }
 
 function App() {
-  const [forecasts, setForecasts] = useState<Forecast[]>();
+  const [combo, setCombo] = useState<Combo | null>(null);
 
   useEffect(() => {
-    populateWeatherData();
+    fetchCombo();
   }, []);
 
+  async function fetchCombo() {
+    const response = await fetch("combos");
+    if (response.ok) {
+      const data = await response.json();
+      setCombo(data);
+    } else {
+      console.error("Failed to fetch combo data");
+    }
+  }
+
   const contents =
-    forecasts === undefined ? (
+    combo === null ? (
       <p>
         <em>
           Loading... Please refresh once the ASP.NET backend has started. See{" "}
@@ -27,43 +43,44 @@ function App() {
         </em>
       </p>
     ) : (
-      <table className="table table-striped" aria-labelledby="tableLabel">
-        <thead>
-          <tr>
-            <th>Date</th>
-            <th>Temp. (C)</th>
-            <th>Temp. (F)</th>
-            <th>Summary</th>
-          </tr>
-        </thead>
-        <tbody>
-          {forecasts.map((forecast) => (
-            <tr key={forecast.date}>
-              <td>{forecast.date}</td>
-              <td>{forecast.temperatureC}</td>
-              <td>{forecast.temperatureF}</td>
-              <td>{forecast.summary}</td>
-            </tr>
+      <>
+        <h2>Components:</h2>
+        <ul>
+          {Object.entries(combo.mkComponents).map(([key, component]) => (
+            <li key={key}>
+              <b>{component.type}</b>: {component.name}
+            </li>
           ))}
-        </tbody>
-      </table>
+        </ul>
+
+        <h2>Stats:</h2>
+        <ul>
+          {Object.entries(combo.stats).map(([statName, statValue]) => (
+            <li key={statName}>
+              <b>{statName}</b>: {statValue}
+            </li>
+          ))}
+        </ul>
+      </>
     );
 
   return (
     <div>
-      <h1 id="tableLabel">Weather forecast</h1>
-      <p>This component demonstrates fetching data from the server.</p>
+      <h1 id="tableLabel">Mario Kart 8 Deluxe Combo</h1>
       {contents}
+      <p>
+        Combo stats are a sum of the components pluss three, then divided by
+        four.
+      </p>
+      <p>
+        {" "}
+        All stats are taken from{" "}
+        <a href="https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics">
+          the Mario Wiki
+        </a>
+      </p>
     </div>
   );
-
-  async function populateWeatherData() {
-    const response = await fetch("weatherforecast");
-    if (response.ok) {
-      const data = await response.json();
-      setForecasts(data);
-    }
-  }
 }
 
 export default App;

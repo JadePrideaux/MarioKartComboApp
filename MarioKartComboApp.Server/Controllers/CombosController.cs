@@ -38,7 +38,7 @@ namespace MarioKartComboApp.Server.Controllers
             _logger = logger;
         }
 
-        [HttpGet(Name = "GetCombo")]
+        [HttpGet(Name = "GetCombos")]
         public Combo Get()
         {
             return combo;
