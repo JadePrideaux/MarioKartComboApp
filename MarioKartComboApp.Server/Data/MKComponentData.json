@@ -1,0 +1,42 @@
+﻿{
+    "Driver": {
+        "Yoshi": {
+            "name": "Yoshi",
+            "type": "Driver",
+            "stats": {
+                "GroundSpeed": 6,
+                "MiniTurbo": 4
+            }
+        }
+    },
+    "Body": {
+        "Teddy Buggy": {
+            "name": "Teddy Buggy",
+            "type": "Body",
+            "stats": {
+                "GroundSpeed": 2,
+                "MiniTurbo": 6
+            }
+        }
+    },
+    "Tires": {
+        "Roller": {
+            "name": "Roller",
+            "type": "Tires",
+            "stats": {
+                "GroundSpeed": 0,
+                "MiniTurbo": 6
+            }
+        }
+    },
+    "Glider": {
+        "Cloud Glider": {
+            "name": "Cloud Glider",
+            "type": "Glider",
+            "stats": {
+                "GroundSpeed": 0,
+                "MiniTurbo": 2
+            }
+        }
+    }
+}

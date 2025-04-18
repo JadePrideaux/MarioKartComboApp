@@ -1,5 +1,5 @@
-﻿using MarioKartComboApp.Server.Data;
-using MarioKartComboApp.Server.Enums;
+﻿using MarioKartComboApp.Server.Enums;
+using MarioKartComboApp.Server.Interfaces;
 using MarioKartComboApp.Server.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,35 +7,29 @@ namespace MarioKartComboApp.Server.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class CombosController(ILogger<CombosController> logger) : ControllerBase
+    public class CombosController
+    (
+        ILogger<CombosController> logger,
+        IMKComponentDataLoader dataLoader
+    ) : ControllerBase
     {
-        // create a combo with data from MKComponentData
-        private static readonly Combo combo = new(
-            new Dictionary<MKComponentType, MKComponent>
-            {
-                {
-                    MKComponentType.Driver,
-                    MKComponentData.Components[MKComponentType.Driver]["Yoshi"]
-                },
-                {
-                    MKComponentType.Body,
-                    MKComponentData.Components[MKComponentType.Body]["Teddy Buggy"]
-                },
-                {
-                    MKComponentType.Tires,
-                    MKComponentData.Components[MKComponentType.Tires]["Roller"] },
-                {
-                    MKComponentType.Glider,
-                    MKComponentData.Components[MKComponentType.Glider]["Cloud Glider"]
-                }
-            }
-        );
-
         private readonly ILogger<CombosController> _logger = logger;
+        private readonly IMKComponentDataLoader _dataLoader = dataLoader;
+
 
         [HttpGet(Name = "GetCombos")]
-        public Combo Get()
+        public async Task<Combo> Get()
         {
+            var components = await _dataLoader.LoadComponentAsync() ?? throw new Exception("Failed to load components.");
+
+            var combo = new Combo(new Dictionary<MKComponentType, MKComponent>
+            {
+                { MKComponentType.Driver, components[MKComponentType.Driver]["Yoshi"] },
+                { MKComponentType.Body, components[MKComponentType.Body]["Teddy Buggy"] },
+                { MKComponentType.Tires, components[MKComponentType.Tires]["Roller"] },
+                { MKComponentType.Glider, components[MKComponentType.Glider]["Cloud Glider"] }
+            });
+
             return combo;
         }
     }

@@ -1,3 +1,5 @@
+using MarioKartComboApp.Server.Data;
+using MarioKartComboApp.Server.Interfaces;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,9 +10,17 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers().AddJsonOptions(options =>
 {
     options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+    options.JsonSerializerOptions.PropertyNameCaseInsensitive = true;
 });
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+
+// Load the Mario Kart Component Data
+builder.Services.AddSingleton<IMKComponentDataLoader, MKComponentDataLoader>(provider =>
+{
+    var filePath = "./Data/MKComponentData.json";
+    return new MKComponentDataLoader(filePath);
+});
 
 var app = builder.Build();
 
