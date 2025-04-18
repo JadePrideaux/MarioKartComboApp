@@ -57,7 +57,7 @@ function App() {
         <ul>
           {Object.entries(combo.stats).map(([statName, statValue]) => (
             <li key={statName}>
-              <b>{statName}</b>: {statValue}
+              <b>{statName}</b>: {statValue.toFixed(2)}
             </li>
           ))}
         </ul>
