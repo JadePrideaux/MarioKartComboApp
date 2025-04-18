@@ -5,7 +5,7 @@ namespace MarioKartComboApp.Server.Models
     public class Combo
     {
         public Dictionary<MKComponentType, MKComponent> MKComponents { get; set; } = [];
-        public Dictionary<string, float> Stats { get; set; } = [];
+        public Dictionary<StatType, float> Stats { get; set; } = [];
 
         public Combo(Dictionary<MKComponentType, MKComponent> components)
         {
@@ -14,9 +14,9 @@ namespace MarioKartComboApp.Server.Models
         }
 
         // Calculates the combo stats from the components
-        public Dictionary<string, float> CalculateStats()
+        public Dictionary<StatType, float> CalculateStats()
         {
-            Dictionary<StatType, int> statTotals = new Dictionary<StatType, int>();
+            Dictionary<StatType, int> statTotals = [];
 
             foreach (MKComponent component in MKComponents.Values)
             {
@@ -29,13 +29,13 @@ namespace MarioKartComboApp.Server.Models
                 }
             }
 
-            Dictionary<string, float> comboStats = new Dictionary<string, float>();
+            Dictionary<StatType, float> comboStats = [];
 
             // calculate the combo stats based on the (total + 3) / 4
             foreach (KeyValuePair<StatType, int> stat in statTotals)
             {
                 float calculatedStat = (stat.Value + 3) / 4f;
-                comboStats.Add(stat.Key.ToString(), calculatedStat);
+                comboStats.Add(stat.Key, calculatedStat);
             }
 
             return comboStats;

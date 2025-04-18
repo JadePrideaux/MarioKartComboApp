@@ -7,10 +7,10 @@ namespace MarioKartComboApp.Server.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class CombosController : ControllerBase
+    public class CombosController(ILogger<CombosController> logger) : ControllerBase
     {
         // create a combo with data from MKComponentData
-        private static readonly Combo combo = new Combo(
+        private static readonly Combo combo = new(
             new Dictionary<MKComponentType, MKComponent>
             {
                 {
@@ -31,12 +31,7 @@ namespace MarioKartComboApp.Server.Controllers
             }
         );
 
-        private readonly ILogger<CombosController> _logger;
-
-        public CombosController(ILogger<CombosController> logger)
-        {
-            _logger = logger;
-        }
+        private readonly ILogger<CombosController> _logger = logger;
 
         [HttpGet(Name = "GetCombos")]
         public Combo Get()
