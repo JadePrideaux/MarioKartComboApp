@@ -16,12 +16,12 @@ namespace MarioKartComboApp.Server.Controllers
         private readonly ILogger<CombosController> _logger = logger;
         private readonly IMKComponentDataLoader _dataLoader = dataLoader;
 
-
         [HttpGet(Name = "GetCombos")]
         public async Task<Combo> Get()
         {
             var components = await _dataLoader.LoadComponentAsync() ?? throw new Exception("Failed to load components.");
 
+            // Create a new combo with preset values for components.
             var combo = new Combo(new Dictionary<MKComponentType, MKComponent>
             {
                 { MKComponentType.Driver, components[MKComponentType.Driver]["Yoshi"] },

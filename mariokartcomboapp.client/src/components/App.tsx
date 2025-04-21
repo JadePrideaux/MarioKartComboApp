@@ -2,15 +2,32 @@ import { useEffect, useState } from "react";
 import "../styles/App.css";
 
 interface Combo {
-  // (Dicts are serialised into JSON as an object)
   mkComponents: {
     [key: string]: {
       name: string;
       type: string;
+      imgURL?: string | null;
     };
   };
   stats: {
-    [key: string]: number;
+    speed: {
+      ground: number;
+      water: number;
+      air: number;
+      antiGravity: number;
+    };
+    acceleration: number;
+    weight: number;
+    handling: {
+      ground: number;
+      water: number;
+      air: number;
+      antiGravity: number;
+    };
+    miniTurbo: number;
+    invincibility: number;
+    offRoadTraction: number;
+    onRoadTraction: number;
   };
 }
 
@@ -49,6 +66,16 @@ function App() {
           {Object.entries(combo.mkComponents).map(([key, component]) => (
             <li key={key}>
               <b>{component.type}</b>: {component.name}
+              {/*If there is an imgURL, render the image*/}
+              {component.imgURL && (
+                <div>
+                  <img
+                    src={component.imgURL}
+                    alt={component.name}
+                    style={{ width: "100px", height: "auto" }}
+                  />
+                </div>
+              )}
             </li>
           ))}
         </ul>
@@ -57,7 +84,22 @@ function App() {
         <ul>
           {Object.entries(combo.stats).map(([statName, statValue]) => (
             <li key={statName}>
-              <b>{statName}</b>: {statValue.toFixed(2)}
+              {/*If value type is number, print the stat*/}
+              {/*Else If value type is object, list each stat in the object*/}
+              <b>{statName}</b>:
+              {typeof statValue === "number" ? (
+                <>{statValue.toFixed(2)}</>
+              ) : (
+                <ul>
+                  {Object.entries(statValue).map(
+                    ([subStatName, subStatValue]) => (
+                      <li key={subStatName}>
+                        {subStatName}: {subStatValue.toFixed(2)}
+                      </li>
+                    )
+                  )}
+                </ul>
+              )}
             </li>
           ))}
         </ul>

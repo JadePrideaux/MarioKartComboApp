@@ -1,5 +1,10 @@
 ﻿namespace MarioKartComboApp.Server.Models
 {
+    /* 
+        Stats object mirrors the layout in the json and on the website, 
+        grouping Speed and Handling stats into their own sub classes.
+    */
+
     public class Stats
     {
         public SpeedStats Speed { get; set; } = new();
@@ -13,7 +18,7 @@
 
         public Stats() { }
 
-        // Helper method to add stats 
+        // Helper method to add stats, for each stat, add this stat value to the other stat value
         public void Add(Stats other)
         {
             Speed.Ground += other.Speed.Ground;
@@ -34,6 +39,7 @@
             Invincibility += other.Invincibility;
         }
 
+        // Converts the sum stats to their combo values
         public Stats FinalizeStats()
         {
             return new Stats

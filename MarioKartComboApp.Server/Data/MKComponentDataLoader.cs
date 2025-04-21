@@ -14,10 +14,11 @@ namespace MarioKartComboApp.Server.Data
         {
             var jsonData = await File.ReadAllTextAsync(_filePath);
 
-            // Convert the strings in the json data to enums
             var options = new JsonSerializerOptions
             {
+                // Make properties not case sensitive
                 PropertyNameCaseInsensitive = true,
+                // Convert the strings in the json data to enums
                 Converters = { new JsonStringEnumConverter() }
             };
 
