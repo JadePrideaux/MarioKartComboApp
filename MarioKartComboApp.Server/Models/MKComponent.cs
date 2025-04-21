@@ -5,16 +5,29 @@ namespace MarioKartComboApp.Server.Models
     public class MKComponent
     {
         public string Name { get; set; } = string.Empty;
-        public Dictionary<StatType, int> Stats { get; set; } = new();
         public MKComponentType Type { get; set; }
+        public string? ImgURL { get; set; }
+        public SizeType? Size { get; set; }
+        public required Stats Stats { get; set; }
 
         public MKComponent() { }
 
-        public MKComponent(string name, Dictionary<StatType, int> stats, MKComponentType type)
+        public MKComponent
+        (
+            string name,
+            MKComponentType type,
+            string? imgURL,
+            SizeType? size,
+            Stats stats
+        )
         {
             Name = name;
-            Stats = stats ?? new();
             Type = type;
+            ImgURL = imgURL;
+            Size = size;
+            Stats = stats;
+
         }
+
     }
 }

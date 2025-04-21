@@ -3,19 +3,54 @@
         "Yoshi": {
             "name": "Yoshi",
             "type": "Driver",
+            "size": "Medium",
+            "imgURL": "https://mario.wiki.gallery/images/9/91/MK8_Yoshi_Icon.png",
             "stats": {
-                "GroundSpeed": 6,
-                "MiniTurbo": 4
+                "Speed": {
+                    "Ground": 6,
+                    "Water": 6,
+                    "Air": 6,
+                    "AntiGravity": 6
+                },
+                "Acceleration": 3,
+                "Weight": 4,
+                "Handling": {
+                    "Ground": 5,
+                    "Water": 5,
+                    "Air": 5,
+                    "AntiGravity": 5
+                },
+                "OffRoadTraction": 3,
+                "MiniTurbo": 4,
+                "Invincibility": 1,
+                "OnRoadTraction": 3
             }
         }
     },
     "Body": {
-        "Teddy Buggy": {
-            "name": "Teddy Buggy",
+        "Mr. Scooty": {
+            "name": "Mr. Scooty",
             "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/1/18/MrScootyBodyMK8.png",
             "stats": {
-                "GroundSpeed": 2,
-                "MiniTurbo": 6
+                "Speed": {
+                    "Ground": 0,
+                    "Water": 1,
+                    "Air": 1,
+                    "AntiGravity": 2
+                },
+                "Acceleration": 7,
+                "Weight": 0,
+                "Handling": {
+                    "Ground": 5,
+                    "Water": 4,
+                    "Air": 4,
+                    "AntiGravity": 5
+                },
+                "OffRoadTraction": 4,
+                "MiniTurbo": 7,
+                "Invincibility": 0,
+                "OnRoadTraction": 1
             }
         }
     },
@@ -23,9 +58,26 @@
         "Roller": {
             "name": "Roller",
             "type": "Tires",
+            "imgURL": "https://mario.wiki.gallery/images/7/76/RollerTiresMK8.png",
             "stats": {
-                "GroundSpeed": 0,
-                "MiniTurbo": 6
+                "Speed": {
+                    "Ground": 0,
+                    "Water": 3,
+                    "Air": 3,
+                    "AntiGravity": 0
+                },
+                "Acceleration": 6,
+                "Weight": 0,
+                "Handling": {
+                    "Ground": 4,
+                    "Water": 4,
+                    "Air": 4,
+                    "AntiGravity": 4
+                },
+                "OffRoadTraction": 4,
+                "MiniTurbo": 6,
+                "Invincibility": 0,
+                "OnRoadTraction": 0
             }
         }
     },
@@ -33,9 +85,26 @@
         "Cloud Glider": {
             "name": "Cloud Glider",
             "type": "Glider",
+            "imgURL": "https://mario.wiki.gallery/images/8/84/Cloud_Glider.png",
             "stats": {
-                "GroundSpeed": 0,
-                "MiniTurbo": 2
+                "Speed": {
+                    "Ground": 0,
+                    "Water": 1,
+                    "Air": 1,
+                    "AntiGravity": 1
+                },
+                "Acceleration": 2,
+                "Weight": 0,
+                "Handling": {
+                    "Ground": 1,
+                    "Water": 0,
+                    "Air": 2,
+                    "AntiGravity": 1
+                },
+                "OffRoadTraction": 1,
+                "MiniTurbo": 2,
+                "Invincibility": 0,
+                "OnRoadTraction": 1
             }
         }
     }

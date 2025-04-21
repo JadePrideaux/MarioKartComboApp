@@ -25,7 +25,7 @@ namespace MarioKartComboApp.Server.Controllers
             var combo = new Combo(new Dictionary<MKComponentType, MKComponent>
             {
                 { MKComponentType.Driver, components[MKComponentType.Driver]["Yoshi"] },
-                { MKComponentType.Body, components[MKComponentType.Body]["Teddy Buggy"] },
+                { MKComponentType.Body, components[MKComponentType.Body]["Mr. Scooty"] },
                 { MKComponentType.Tires, components[MKComponentType.Tires]["Roller"] },
                 { MKComponentType.Glider, components[MKComponentType.Glider]["Cloud Glider"] }
             });
