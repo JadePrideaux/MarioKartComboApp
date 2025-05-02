@@ -47,11 +47,15 @@ export default defineConfig({
     },
     server: {
         proxy: {
-            '^/weatherforecast': {
+            '/weatherforecast': {
                 target,
                 secure: false
             },
-            '^/combos': {
+            '/combo': {
+                target,
+                secure: false
+            },
+            '/combo/randomcombo': {
                 target,
                 secure: false
             }

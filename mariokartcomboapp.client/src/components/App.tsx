@@ -39,7 +39,7 @@ function App() {
   }, []);
 
   async function fetchCombo() {
-    const response = await fetch("combos");
+    const response = await fetch("combo/combo");
     if (response.ok) {
       const data = await response.json();
       setCombo(data);
