@@ -361,9 +361,3 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
-
-# Ignore venv folder (Python virtual environment)
-venv/
-
-# Ignore .idea folder (IntelliJ/IDEA project folder)
-.idea/
