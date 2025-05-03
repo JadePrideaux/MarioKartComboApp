@@ -39,7 +39,7 @@ function App() {
   }, []);
 
   async function fetchCombo() {
-    const response = await fetch("combo/combo");
+    const response = await fetch("combo/randomcombo");
     if (response.ok) {
       const data = await response.json();
       setCombo(data);
@@ -109,9 +109,10 @@ function App() {
   return (
     <div>
       <h1 id="tableLabel">Mario Kart 8 Deluxe Combo</h1>
+      <button onClick={fetchCombo}>Get Random Combo</button>
       {contents}
       <p>
-        Combo stats are a sum of the components pluss three, then divided by
+        Combo stats are a sum of the components, plus three, then divided by
         four.
       </p>
       <p>

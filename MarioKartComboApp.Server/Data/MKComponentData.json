@@ -25,6 +25,32 @@
                 "Invincibility": 1,
                 "OnRoadTraction": 3
             }
+        },
+        "Bowser": {
+            "name": "Bowser",
+            "type": "Driver",
+            "size": "Large",
+            "imgURL": "https://mario.wiki.gallery/images/thumb/4/47/MK8_Bowser_Icon.png/32px-MK8_Bowser_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 10,
+                    "Water": 10,
+                    "Air": 10,
+                    "AntiGravity": 10
+                },
+                "Acceleration": 0,
+                "Weight": 10,
+                "Handling": {
+                    "Ground": 0,
+                    "Water": 0,
+                    "Air": 0,
+                    "AntiGravity": 0
+                },
+                "OffRoadTraction": 0,
+                "MiniTurbo": 0,
+                "Invincibility": 6,
+                "OnRoadTraction": 6
+            }
         }
     },
     "Body": {
@@ -51,6 +77,31 @@
                 "MiniTurbo": 7,
                 "Invincibility": 0,
                 "OnRoadTraction": 1
+            }
+        },
+        "Flame Rider": {
+            "name": "Flame Rider",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/thumb/3/31/FlameRiderBodyMK8.png/75px-FlameRiderBodyMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 2,
+                    "Water": 2,
+                    "Air": 3,
+                    "AntiGravity": 4
+                },
+                "Acceleration": 5,
+                "Weight": 1,
+                "Handling": {
+                    "Ground": 4,
+                    "Water": 3,
+                    "Air": 3,
+                    "AntiGravity": 4
+                },
+                "OffRoadTraction": 5,
+                "MiniTurbo": 5,
+                "Invincibility": 4,
+                "OnRoadTraction": 3
             }
         }
     },
@@ -79,6 +130,31 @@
                 "Invincibility": 0,
                 "OnRoadTraction": 0
             }
+        },
+        "Retro Off-Road": {
+            "name": "Retro Off-Road",
+            "type": "Tires",
+            "imgURL": "https://mario.wiki.gallery/images/thumb/4/48/Retro_Off-Road.png/75px-Retro_Off-Road.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 3,
+                    "Water": 4,
+                    "Air": 1,
+                    "AntiGravity": 2
+                },
+                "Acceleration": 3,
+                "Weight": 3,
+                "Handling": {
+                    "Ground": 1,
+                    "Water": 1,
+                    "Air": 2,
+                    "AntiGravity": 2
+                },
+                "OffRoadTraction": 6,
+                "MiniTurbo": 3,
+                "Invincibility": 6,
+                "OnRoadTraction": 3
+            }
         }
     },
     "Glider": {
@@ -105,6 +181,31 @@
                 "MiniTurbo": 2,
                 "Invincibility": 0,
                 "OnRoadTraction": 1
+            }
+        },
+        "Wario Wing": {
+            "name": "Wario Wing",
+            "type": "Glider",
+            "imgURL": "https://mario.wiki.gallery/images/thumb/1/18/GoldGliderMK8.png/75px-GoldGliderMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 1,
+                    "Water": 0,
+                    "Air": 2,
+                    "AntiGravity": 1
+                },
+                "Acceleration": 1,
+                "Weight": 2,
+                "Handling": {
+                    "Ground": 1,
+                    "Water": 1,
+                    "Air": 1,
+                    "AntiGravity": 0
+                },
+                "OffRoadTraction": 0,
+                "MiniTurbo": 1,
+                "Invincibility": 1,
+                "OnRoadTraction": 2
             }
         }
     }
