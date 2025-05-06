@@ -33,7 +33,12 @@ def process_table_data(table):
 
     # Get all rows in the tbody
     rows = table.tbody.find_all('tr')
-    
+
+    for row in rows:
+        a_tag = row.find('a')
+        if a_tag and a_tag.get('title'):
+            print(a_tag['title'])
+
 
 '''
 {'Glider': [],
