@@ -35,9 +35,19 @@ def process_table_data(table):
     rows = table.tbody.find_all('tr')
 
     for row in rows:
-        a_tag = row.find('a')
-        if a_tag and a_tag.get('title'):
-            print(a_tag['title'])
+        # Find the <a> tag and print the component name (title)
+        a = row.find('a')
+        if not a or not a.get('title'):
+            continue
+
+        print(a['title'])
+
+        # Find the <img> tag and print the link
+        img = a.find('img')
+        if not img or not a.find('img'):
+            continue
+
+        print(img['src'])
 
 
 '''
