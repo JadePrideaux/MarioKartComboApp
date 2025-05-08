@@ -27,44 +27,86 @@ def select_tables(html):
 
 
 def process_table_data(table):
-    # Get and Print table title
-    title = table.tbody.tr.th.big.big.string
+    # Get Table title
+    title = table.find('th').get_text(strip=True)
     print(f"Table: {title}")
 
-    # Get all rows in the tbody
-    rows = table.tbody.find_all('tr')
+    # Define the columns to skip for each table, number to skip, index to start from
+    table_configs = {
+        "Drivers (DV)": {"skip_cols": 2, "name_index": 1},
+        "Bodies (BD)": {"skip_cols": 1, "name_index": 0},
+        "Tires (TR)": {"skip_cols": 1, "name_index": 0},
+        "Gliders (WG)": {"skip_cols": 1, "name_index": 0},
+    }
 
+    # The stats that are shared between each table and their structure.
+    shared_stats = [
+        ("Speed", "Ground (SL)"), ("Speed", "Water (SW)"), ("Speed", "Air (SA)"), ("Speed", "Anti-Gravity (SG)"),
+        ("Acceleration", None),
+        ("Weight", None),
+        ("Handling", "Ground (TL)"), ("Handling", "Water (TW)"), ("Handling", "Air (TA)"), ("Handling", "Anti-Gravity (TG)"),
+        ("Traction (Off-Road)", None),
+        ("Mini-Turbo", None),
+        ("Invincibility", None),
+        ("Traction (On-Road)", None)
+    ]
+
+    # Check that the table has a config
+    config = table_configs.get(title)
+    if not config:
+        print(f"No config found for table: {title}")
+        return
+
+    skip_cols = config["skip_cols"]
+    name_index = config["name_index"]
+
+    rows = table.find_all('tr')[2:]  # skip header rows
+
+    # For each row in the table
     for row in rows:
-        # Find the <a> tag and print the component name (title)
-        a = row.find('a')
+        cells = row.find_all(['td', 'th'])
+        if not cells or len(cells) < skip_cols + len(shared_stats):
+            continue
+
+        # Find the name of the component
+        a = cells[name_index].find('a')
         if not a or not a.get('title'):
             continue
+        name = a['title']
 
-        print(a['title'])
+        # Find the image
+        img_tag = a.find('img')
+        img_url = img_tag['src'] if img_tag else ""
 
-        # Find the <img> tag and print the link
-        img = a.find('img')
-        if not img or not a.find('img'):
-            continue
+        # Build component
+        component = {
+            "name": name,
+            "type": title,
+            "imgURL": img_url,
+            "stats": {}
+        }
 
-        print(img['src'])
+        # Fill the stats dictionary in the component
+        for (group, sub), cell in zip(shared_stats, cells[skip_cols:]):
+            value = cell.get_text(strip=True)
+            try:
+                value = int(value)
+            except ValueError:
+                pass
+
+            if sub:
+                component["stats"].setdefault(group, {})[sub] = value
+            else:
+                component["stats"][group] = value
+
+        print(component)
 
 
 '''
-{'Glider': [],
- 'Speed': ['Water(SW)',
-           'Air(SA)',
-           'Anti-Gravity(SG)',
-           'Ground(TL)'],
- 'Acceleration(AC)': [],
- 'Weight(WG)': [],
- 'Handling': ['Ground(TL)',
-              'Water(TW)',
-              'Air(TA)',
-              'Anti-Gravity(TG)'],
- '(Off-Road) Traction(OF)': [],
- 'Mini-Turbo(MT)': [],
- 'Invincibility(IV)': [],
- 'On-Road Traction(ON)1': []
- }
+    Problems:
+    
+    - Karts do not have size currently
+    - Only the first component per row is created
+    - Stat names do not match how they should be in the JSON
+
 '''
