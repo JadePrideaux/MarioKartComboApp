@@ -86,6 +86,10 @@ def process_table_data(table):
             "stats": {}
         }
 
+        # Add size value for drivers
+        if title == "Drivers (DV)":
+            component["size"] = cells[0].get_text(strip=True)
+
         # Fill the stats dictionary in the component
         for (group, sub), cell in zip(shared_stats, cells[skip_cols:]):
             value = cell.get_text(strip=True)
@@ -105,8 +109,8 @@ def process_table_data(table):
 '''
     Problems:
     
-    - Karts do not have size currently
     - Only the first component per row is created
     - Stat names do not match how they should be in the JSON
+    - Separate function into separate smaller functions
 
 '''
