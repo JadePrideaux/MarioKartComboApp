@@ -1,9 +1,606 @@
 ﻿{
     "Driver": {
+        "Baby Peach": {
+            "name": "Baby Peach",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/3/3d/MK8_BabyPeach_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 1,
+                    "Water": 1,
+                    "Air": 1,
+                    "AntiGravity": 1
+                },
+                "Acceleration": 4,
+                "Weight": 0,
+                "Handling": {
+                    "Ground": 10,
+                    "Water": 10,
+                    "Air": 10,
+                    "AntiGravity": 10
+                },
+                "OffRoadTraction": 5,
+                "MiniTurbo": 5,
+                "Invincibility": 6,
+                "OnRoadTraction": 3
+            },
+            "size": "Small"
+        },
+        "Baby Daisy": {
+            "name": "Baby Daisy",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/4/43/MK8_BabyDaisy_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 1,
+                    "Water": 1,
+                    "Air": 1,
+                    "AntiGravity": 1
+                },
+                "Acceleration": 4,
+                "Weight": 0,
+                "Handling": {
+                    "Ground": 10,
+                    "Water": 10,
+                    "Air": 10,
+                    "AntiGravity": 10
+                },
+                "OffRoadTraction": 5,
+                "MiniTurbo": 5,
+                "Invincibility": 6,
+                "OnRoadTraction": 3
+            },
+            "size": "Small"
+        },
+        "Baby Rosalina": {
+            "name": "Baby Rosalina",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/0/09/MK8_BabyRosalina_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 1,
+                    "Water": 1,
+                    "Air": 1,
+                    "AntiGravity": 1
+                },
+                "Acceleration": 5,
+                "Weight": 0,
+                "Handling": {
+                    "Ground": 9,
+                    "Water": 9,
+                    "Air": 9,
+                    "AntiGravity": 9
+                },
+                "OffRoadTraction": 3,
+                "MiniTurbo": 5,
+                "Invincibility": 6,
+                "OnRoadTraction": 4
+            },
+            "size": "Small"
+        },
+        "Lemmy": {
+            "name": "Lemmy",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/f/fc/MK8_Lemmy_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 1,
+                    "Water": 1,
+                    "Air": 1,
+                    "AntiGravity": 1
+                },
+                "Acceleration": 5,
+                "Weight": 0,
+                "Handling": {
+                    "Ground": 9,
+                    "Water": 9,
+                    "Air": 9,
+                    "AntiGravity": 9
+                },
+                "OffRoadTraction": 3,
+                "MiniTurbo": 5,
+                "Invincibility": 6,
+                "OnRoadTraction": 4
+            },
+            "size": "Small"
+        },
+        "Baby Mario": {
+            "name": "Baby Mario",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/d/d2/MK8_BabyMario_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 2,
+                    "Water": 2,
+                    "Air": 2,
+                    "AntiGravity": 2
+                },
+                "Acceleration": 5,
+                "Weight": 1,
+                "Handling": {
+                    "Ground": 8,
+                    "Water": 8,
+                    "Air": 8,
+                    "AntiGravity": 8
+                },
+                "OffRoadTraction": 4,
+                "MiniTurbo": 5,
+                "Invincibility": 5,
+                "OnRoadTraction": 2
+            },
+            "size": "Small"
+        },
+        "Baby Luigi": {
+            "name": "Baby Luigi",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/a/aa/MK8_BabyLuigi_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 2,
+                    "Water": 2,
+                    "Air": 2,
+                    "AntiGravity": 2
+                },
+                "Acceleration": 5,
+                "Weight": 1,
+                "Handling": {
+                    "Ground": 8,
+                    "Water": 8,
+                    "Air": 8,
+                    "AntiGravity": 8
+                },
+                "OffRoadTraction": 4,
+                "MiniTurbo": 5,
+                "Invincibility": 5,
+                "OnRoadTraction": 2
+            },
+            "size": "Small"
+        },
+        "Dry Bones": {
+            "name": "Dry Bones",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/3/3f/MK8DX_Dry_Bones_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 2,
+                    "Water": 2,
+                    "Air": 2,
+                    "AntiGravity": 2
+                },
+                "Acceleration": 5,
+                "Weight": 1,
+                "Handling": {
+                    "Ground": 8,
+                    "Water": 8,
+                    "Air": 8,
+                    "AntiGravity": 8
+                },
+                "OffRoadTraction": 4,
+                "MiniTurbo": 5,
+                "Invincibility": 5,
+                "OnRoadTraction": 2
+            },
+            "size": "Small"
+        },
+        "Mii (Light)": {
+            "name": "Mii (Light)",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/b/bb/Mii_MK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 2,
+                    "Water": 2,
+                    "Air": 2,
+                    "AntiGravity": 2
+                },
+                "Acceleration": 5,
+                "Weight": 1,
+                "Handling": {
+                    "Ground": 8,
+                    "Water": 8,
+                    "Air": 8,
+                    "AntiGravity": 8
+                },
+                "OffRoadTraction": 4,
+                "MiniTurbo": 5,
+                "Invincibility": 5,
+                "OnRoadTraction": 2
+            },
+            "size": "Small"
+        },
+        "Koopa Troopa": {
+            "name": "Koopa Troopa",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/b/bc/MK8_Koopa_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 3,
+                    "Water": 3,
+                    "Air": 3,
+                    "AntiGravity": 3
+                },
+                "Acceleration": 4,
+                "Weight": 2,
+                "Handling": {
+                    "Ground": 8,
+                    "Water": 8,
+                    "Air": 8,
+                    "AntiGravity": 8
+                },
+                "OffRoadTraction": 5,
+                "MiniTurbo": 4,
+                "Invincibility": 4,
+                "OnRoadTraction": 1
+            },
+            "size": "Small"
+        },
+        "Lakitu": {
+            "name": "Lakitu",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/7/7d/MK8_Lakitu_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 3,
+                    "Water": 3,
+                    "Air": 3,
+                    "AntiGravity": 3
+                },
+                "Acceleration": 4,
+                "Weight": 2,
+                "Handling": {
+                    "Ground": 8,
+                    "Water": 8,
+                    "Air": 8,
+                    "AntiGravity": 8
+                },
+                "OffRoadTraction": 5,
+                "MiniTurbo": 4,
+                "Invincibility": 4,
+                "OnRoadTraction": 1
+            },
+            "size": "Small"
+        },
+        "Bowser Jr.": {
+            "name": "Bowser Jr.",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/2/26/MK8_Bowser_Jr_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 3,
+                    "Water": 3,
+                    "Air": 3,
+                    "AntiGravity": 3
+                },
+                "Acceleration": 4,
+                "Weight": 2,
+                "Handling": {
+                    "Ground": 8,
+                    "Water": 8,
+                    "Air": 8,
+                    "AntiGravity": 8
+                },
+                "OffRoadTraction": 5,
+                "MiniTurbo": 4,
+                "Invincibility": 4,
+                "OnRoadTraction": 1
+            },
+            "size": "Small"
+        },
+        "Toadette": {
+            "name": "Toadette",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/8/8e/MK8_Toadette_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 3,
+                    "Water": 3,
+                    "Air": 3,
+                    "AntiGravity": 3
+                },
+                "Acceleration": 5,
+                "Weight": 2,
+                "Handling": {
+                    "Ground": 7,
+                    "Water": 7,
+                    "Air": 7,
+                    "AntiGravity": 7
+                },
+                "OffRoadTraction": 2,
+                "MiniTurbo": 4,
+                "Invincibility": 3,
+                "OnRoadTraction": 4
+            },
+            "size": "Small"
+        },
+        "Wendy": {
+            "name": "Wendy",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/d/d9/MK8_Wendy_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 3,
+                    "Water": 3,
+                    "Air": 3,
+                    "AntiGravity": 3
+                },
+                "Acceleration": 5,
+                "Weight": 2,
+                "Handling": {
+                    "Ground": 7,
+                    "Water": 7,
+                    "Air": 7,
+                    "AntiGravity": 7
+                },
+                "OffRoadTraction": 2,
+                "MiniTurbo": 4,
+                "Invincibility": 3,
+                "OnRoadTraction": 4
+            },
+            "size": "Small"
+        },
+        "Isabelle": {
+            "name": "Isabelle",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/2/20/MK8_Isabelle_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 3,
+                    "Water": 3,
+                    "Air": 3,
+                    "AntiGravity": 3
+                },
+                "Acceleration": 5,
+                "Weight": 2,
+                "Handling": {
+                    "Ground": 7,
+                    "Water": 7,
+                    "Air": 7,
+                    "AntiGravity": 7
+                },
+                "OffRoadTraction": 2,
+                "MiniTurbo": 4,
+                "Invincibility": 3,
+                "OnRoadTraction": 4
+            },
+            "size": "Small"
+        },
+        "Toad": {
+            "name": "Toad",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/4/45/MK8_Toad_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 4,
+                    "Water": 4,
+                    "Air": 4,
+                    "AntiGravity": 4
+                },
+                "Acceleration": 4,
+                "Weight": 3,
+                "Handling": {
+                    "Ground": 7,
+                    "Water": 7,
+                    "Air": 7,
+                    "AntiGravity": 7
+                },
+                "OffRoadTraction": 4,
+                "MiniTurbo": 4,
+                "Invincibility": 3,
+                "OnRoadTraction": 3
+            },
+            "size": "Small"
+        },
+        "Shy Guy": {
+            "name": "Shy Guy",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/7/7f/MK8_ShyGuy_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 4,
+                    "Water": 4,
+                    "Air": 4,
+                    "AntiGravity": 4
+                },
+                "Acceleration": 4,
+                "Weight": 3,
+                "Handling": {
+                    "Ground": 7,
+                    "Water": 7,
+                    "Air": 7,
+                    "AntiGravity": 7
+                },
+                "OffRoadTraction": 4,
+                "MiniTurbo": 4,
+                "Invincibility": 3,
+                "OnRoadTraction": 3
+            },
+            "size": "Small"
+        },
+        "Larry": {
+            "name": "Larry",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/c/c2/MK8_Larry_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 4,
+                    "Water": 4,
+                    "Air": 4,
+                    "AntiGravity": 4
+                },
+                "Acceleration": 4,
+                "Weight": 3,
+                "Handling": {
+                    "Ground": 7,
+                    "Water": 7,
+                    "Air": 7,
+                    "AntiGravity": 7
+                },
+                "OffRoadTraction": 4,
+                "MiniTurbo": 4,
+                "Invincibility": 3,
+                "OnRoadTraction": 3
+            },
+            "size": "Small"
+        },
+        "Cat Peach": {
+            "name": "Cat Peach",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/a/ad/MK8_Cat_Peach_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 5,
+                    "Water": 5,
+                    "Air": 5,
+                    "AntiGravity": 5
+                },
+                "Acceleration": 4,
+                "Weight": 3,
+                "Handling": {
+                    "Ground": 6,
+                    "Water": 6,
+                    "Air": 6,
+                    "AntiGravity": 6
+                },
+                "OffRoadTraction": 3,
+                "MiniTurbo": 4,
+                "Invincibility": 3,
+                "OnRoadTraction": 2
+            },
+            "size": "Medium"
+        },
+        "Inkling": {
+            "name": "Inkling",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/3/3c/MK8DX_Male_Inkling_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 6,
+                    "Water": 6,
+                    "Air": 6,
+                    "AntiGravity": 6
+                },
+                "Acceleration": 3,
+                "Weight": 5,
+                "Handling": {
+                    "Ground": 5,
+                    "Water": 5,
+                    "Air": 5,
+                    "AntiGravity": 5
+                },
+                "OffRoadTraction": 1,
+                "MiniTurbo": 4,
+                "Invincibility": 1,
+                "OnRoadTraction": 7
+            },
+            "size": "Medium"
+        },
+        "Villager": {
+            "name": "Villager",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/1/16/VillagerMale-Icon-MK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 6,
+                    "Water": 6,
+                    "Air": 6,
+                    "AntiGravity": 6
+                },
+                "Acceleration": 3,
+                "Weight": 5,
+                "Handling": {
+                    "Ground": 5,
+                    "Water": 5,
+                    "Air": 5,
+                    "AntiGravity": 5
+                },
+                "OffRoadTraction": 1,
+                "MiniTurbo": 4,
+                "Invincibility": 1,
+                "OnRoadTraction": 7
+            },
+            "size": "Medium"
+        },
+        "Diddy Kong": {
+            "name": "Diddy Kong",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/8/82/MK8DX_Diddy_Kong_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 5,
+                    "Water": 5,
+                    "Air": 5,
+                    "AntiGravity": 5
+                },
+                "Acceleration": 4,
+                "Weight": 3,
+                "Handling": {
+                    "Ground": 6,
+                    "Water": 6,
+                    "Air": 6,
+                    "AntiGravity": 6
+                },
+                "OffRoadTraction": 3,
+                "MiniTurbo": 4,
+                "Invincibility": 3,
+                "OnRoadTraction": 2
+            },
+            "size": "Medium"
+        },
+        "Peach": {
+            "name": "Peach",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/c/c2/MK8_Peach_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 6,
+                    "Water": 6,
+                    "Air": 6,
+                    "AntiGravity": 6
+                },
+                "Acceleration": 3,
+                "Weight": 4,
+                "Handling": {
+                    "Ground": 5,
+                    "Water": 5,
+                    "Air": 5,
+                    "AntiGravity": 5
+                },
+                "OffRoadTraction": 3,
+                "MiniTurbo": 4,
+                "Invincibility": 1,
+                "OnRoadTraction": 3
+            },
+            "size": "Medium"
+        },
+        "Daisy": {
+            "name": "Daisy",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/3/32/MK8_Daisy_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 6,
+                    "Water": 6,
+                    "Air": 6,
+                    "AntiGravity": 6
+                },
+                "Acceleration": 3,
+                "Weight": 4,
+                "Handling": {
+                    "Ground": 5,
+                    "Water": 5,
+                    "Air": 5,
+                    "AntiGravity": 5
+                },
+                "OffRoadTraction": 3,
+                "MiniTurbo": 4,
+                "Invincibility": 1,
+                "OnRoadTraction": 3
+            },
+            "size": "Medium"
+        },
         "Yoshi": {
             "name": "Yoshi",
             "type": "Driver",
-            "size": "Medium",
             "imgURL": "https://mario.wiki.gallery/images/9/91/MK8_Yoshi_Icon.png",
             "stats": {
                 "Speed": {
@@ -24,13 +621,663 @@
                 "MiniTurbo": 4,
                 "Invincibility": 1,
                 "OnRoadTraction": 3
-            }
+            },
+            "size": "Medium"
+        },
+        "Birdo": {
+            "name": "Birdo",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/2/2b/MKT_Icon_Birdo.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 6,
+                    "Water": 6,
+                    "Air": 6,
+                    "AntiGravity": 6
+                },
+                "Acceleration": 3,
+                "Weight": 4,
+                "Handling": {
+                    "Ground": 5,
+                    "Water": 5,
+                    "Air": 5,
+                    "AntiGravity": 5
+                },
+                "OffRoadTraction": 3,
+                "MiniTurbo": 4,
+                "Invincibility": 1,
+                "OnRoadTraction": 3
+            },
+            "size": "Medium"
+        },
+        "Peachette": {
+            "name": "Peachette",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/f/fd/MK8DX_Peachette_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 6,
+                    "Water": 6,
+                    "Air": 6,
+                    "AntiGravity": 6
+                },
+                "Acceleration": 3,
+                "Weight": 4,
+                "Handling": {
+                    "Ground": 5,
+                    "Water": 5,
+                    "Air": 5,
+                    "AntiGravity": 5
+                },
+                "OffRoadTraction": 3,
+                "MiniTurbo": 4,
+                "Invincibility": 1,
+                "OnRoadTraction": 3
+            },
+            "size": "Medium"
+        },
+        "Tanooki Mario": {
+            "name": "Tanooki Mario",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/a/a2/MK8_Tanooki_Mario_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 6,
+                    "Water": 6,
+                    "Air": 6,
+                    "AntiGravity": 6
+                },
+                "Acceleration": 3,
+                "Weight": 5,
+                "Handling": {
+                    "Ground": 5,
+                    "Water": 5,
+                    "Air": 5,
+                    "AntiGravity": 5
+                },
+                "OffRoadTraction": 1,
+                "MiniTurbo": 4,
+                "Invincibility": 1,
+                "OnRoadTraction": 7
+            },
+            "size": "Medium"
+        },
+        "Mario": {
+            "name": "Mario",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/d/d9/MK8_Mario_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 7,
+                    "Water": 7,
+                    "Air": 7,
+                    "AntiGravity": 7
+                },
+                "Acceleration": 2,
+                "Weight": 6,
+                "Handling": {
+                    "Ground": 4,
+                    "Water": 4,
+                    "Air": 4,
+                    "AntiGravity": 4
+                },
+                "OffRoadTraction": 2,
+                "MiniTurbo": 3,
+                "Invincibility": 3,
+                "OnRoadTraction": 4
+            },
+            "size": "Medium"
+        },
+        "Ludwig": {
+            "name": "Ludwig",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/a/a8/MK8_Ludwig_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 7,
+                    "Water": 7,
+                    "Air": 7,
+                    "AntiGravity": 7
+                },
+                "Acceleration": 2,
+                "Weight": 6,
+                "Handling": {
+                    "Ground": 4,
+                    "Water": 4,
+                    "Air": 4,
+                    "AntiGravity": 4
+                },
+                "OffRoadTraction": 2,
+                "MiniTurbo": 3,
+                "Invincibility": 3,
+                "OnRoadTraction": 4
+            },
+            "size": "Medium"
+        },
+        "Mii (Medium)": {
+            "name": "Mii (Medium)",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/b/bb/Mii_MK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 7,
+                    "Water": 7,
+                    "Air": 7,
+                    "AntiGravity": 7
+                },
+                "Acceleration": 2,
+                "Weight": 6,
+                "Handling": {
+                    "Ground": 4,
+                    "Water": 4,
+                    "Air": 4,
+                    "AntiGravity": 4
+                },
+                "OffRoadTraction": 2,
+                "MiniTurbo": 3,
+                "Invincibility": 3,
+                "OnRoadTraction": 4
+            },
+            "size": "Medium"
+        },
+        "Luigi": {
+            "name": "Luigi",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/5/51/MK8_Luigi_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 7,
+                    "Water": 7,
+                    "Air": 7,
+                    "AntiGravity": 7
+                },
+                "Acceleration": 2,
+                "Weight": 6,
+                "Handling": {
+                    "Ground": 5,
+                    "Water": 5,
+                    "Air": 5,
+                    "AntiGravity": 5
+                },
+                "OffRoadTraction": 1,
+                "MiniTurbo": 3,
+                "Invincibility": 3,
+                "OnRoadTraction": 5
+            },
+            "size": "Medium"
+        },
+        "Iggy": {
+            "name": "Iggy",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/d/dd/MK8_Iggy_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 7,
+                    "Water": 7,
+                    "Air": 7,
+                    "AntiGravity": 7
+                },
+                "Acceleration": 2,
+                "Weight": 6,
+                "Handling": {
+                    "Ground": 5,
+                    "Water": 5,
+                    "Air": 5,
+                    "AntiGravity": 5
+                },
+                "OffRoadTraction": 1,
+                "MiniTurbo": 3,
+                "Invincibility": 3,
+                "OnRoadTraction": 5
+            },
+            "size": "Medium"
+        },
+        "Kamek": {
+            "name": "Kamek",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/0/00/MK8DX_Kamek_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 7,
+                    "Water": 7,
+                    "Air": 7,
+                    "AntiGravity": 7
+                },
+                "Acceleration": 2,
+                "Weight": 6,
+                "Handling": {
+                    "Ground": 5,
+                    "Water": 5,
+                    "Air": 5,
+                    "AntiGravity": 5
+                },
+                "OffRoadTraction": 1,
+                "MiniTurbo": 3,
+                "Invincibility": 3,
+                "OnRoadTraction": 5
+            },
+            "size": "Medium"
+        },
+        "Metal Mario": {
+            "name": "Metal Mario",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/e/e3/MK8_MMario_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 8,
+                    "Water": 8,
+                    "Air": 8,
+                    "AntiGravity": 8
+                },
+                "Acceleration": 1,
+                "Weight": 10,
+                "Handling": {
+                    "Ground": 3,
+                    "Water": 3,
+                    "Air": 3,
+                    "AntiGravity": 3
+                },
+                "OffRoadTraction": 1,
+                "MiniTurbo": 1,
+                "Invincibility": 3,
+                "OnRoadTraction": 8
+            },
+            "size": "Medium"
+        },
+        "Gold Mario": {
+            "name": "Gold Mario",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/c/c8/MK8DX_Gold_Mario_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 8,
+                    "Water": 8,
+                    "Air": 8,
+                    "AntiGravity": 8
+                },
+                "Acceleration": 1,
+                "Weight": 10,
+                "Handling": {
+                    "Ground": 3,
+                    "Water": 3,
+                    "Air": 3,
+                    "AntiGravity": 3
+                },
+                "OffRoadTraction": 1,
+                "MiniTurbo": 1,
+                "Invincibility": 3,
+                "OnRoadTraction": 8
+            },
+            "size": "Medium"
+        },
+        "Pink Gold Peach": {
+            "name": "Pink Gold Peach",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/0/0d/MK8_PGPeach_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 8,
+                    "Water": 8,
+                    "Air": 8,
+                    "AntiGravity": 8
+                },
+                "Acceleration": 1,
+                "Weight": 10,
+                "Handling": {
+                    "Ground": 3,
+                    "Water": 3,
+                    "Air": 3,
+                    "AntiGravity": 3
+                },
+                "OffRoadTraction": 1,
+                "MiniTurbo": 1,
+                "Invincibility": 3,
+                "OnRoadTraction": 8
+            },
+            "size": "Medium"
+        },
+        "Wiggler": {
+            "name": "Wiggler",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/7/7e/MK8DX_Wiggler_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 9,
+                    "Water": 9,
+                    "Air": 9,
+                    "AntiGravity": 9
+                },
+                "Acceleration": 1,
+                "Weight": 8,
+                "Handling": {
+                    "Ground": 2,
+                    "Water": 2,
+                    "Air": 2,
+                    "AntiGravity": 2
+                },
+                "OffRoadTraction": 0,
+                "MiniTurbo": 1,
+                "Invincibility": 4,
+                "OnRoadTraction": 10
+            },
+            "size": "Medium"
+        },
+        "Rosalina": {
+            "name": "Rosalina",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/8/89/MK8_Rosalina_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 8,
+                    "Water": 8,
+                    "Air": 8,
+                    "AntiGravity": 8
+                },
+                "Acceleration": 1,
+                "Weight": 7,
+                "Handling": {
+                    "Ground": 3,
+                    "Water": 3,
+                    "Air": 3,
+                    "AntiGravity": 3
+                },
+                "OffRoadTraction": 3,
+                "MiniTurbo": 2,
+                "Invincibility": 4,
+                "OnRoadTraction": 9
+            },
+            "size": "Large"
+        },
+        "King Boo": {
+            "name": "King Boo",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/1/1d/MK8DX_King_Boo_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 8,
+                    "Water": 8,
+                    "Air": 8,
+                    "AntiGravity": 8
+                },
+                "Acceleration": 1,
+                "Weight": 7,
+                "Handling": {
+                    "Ground": 3,
+                    "Water": 3,
+                    "Air": 3,
+                    "AntiGravity": 3
+                },
+                "OffRoadTraction": 3,
+                "MiniTurbo": 2,
+                "Invincibility": 4,
+                "OnRoadTraction": 9
+            },
+            "size": "Large"
+        },
+        "Link": {
+            "name": "Link",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/e/e8/MK8_Link_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 8,
+                    "Water": 8,
+                    "Air": 8,
+                    "AntiGravity": 8
+                },
+                "Acceleration": 1,
+                "Weight": 7,
+                "Handling": {
+                    "Ground": 3,
+                    "Water": 3,
+                    "Air": 3,
+                    "AntiGravity": 3
+                },
+                "OffRoadTraction": 3,
+                "MiniTurbo": 2,
+                "Invincibility": 4,
+                "OnRoadTraction": 9
+            },
+            "size": "Large"
+        },
+        "Pauline": {
+            "name": "Pauline",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/d/dd/MK8DX_Pauline_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 8,
+                    "Water": 8,
+                    "Air": 8,
+                    "AntiGravity": 8
+                },
+                "Acceleration": 1,
+                "Weight": 7,
+                "Handling": {
+                    "Ground": 3,
+                    "Water": 3,
+                    "Air": 3,
+                    "AntiGravity": 3
+                },
+                "OffRoadTraction": 3,
+                "MiniTurbo": 2,
+                "Invincibility": 4,
+                "OnRoadTraction": 9
+            },
+            "size": "Large"
+        },
+        "Petey Piranha": {
+            "name": "Petey Piranha",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/8/86/MK8DX_Petey_Piranha_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 8,
+                    "Water": 8,
+                    "Air": 8,
+                    "AntiGravity": 8
+                },
+                "Acceleration": 1,
+                "Weight": 10,
+                "Handling": {
+                    "Ground": 3,
+                    "Water": 3,
+                    "Air": 3,
+                    "AntiGravity": 3
+                },
+                "OffRoadTraction": 1,
+                "MiniTurbo": 1,
+                "Invincibility": 6,
+                "OnRoadTraction": 8
+            },
+            "size": "Large"
+        },
+        "Waluigi": {
+            "name": "Waluigi",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/7/78/MK8_Waluigi_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 9,
+                    "Water": 9,
+                    "Air": 9,
+                    "AntiGravity": 9
+                },
+                "Acceleration": 1,
+                "Weight": 8,
+                "Handling": {
+                    "Ground": 2,
+                    "Water": 2,
+                    "Air": 2,
+                    "AntiGravity": 2
+                },
+                "OffRoadTraction": 0,
+                "MiniTurbo": 1,
+                "Invincibility": 4,
+                "OnRoadTraction": 10
+            },
+            "size": "Large"
+        },
+        "Donkey Kong": {
+            "name": "Donkey Kong",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/0/08/MK8_DKong_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 9,
+                    "Water": 9,
+                    "Air": 9,
+                    "AntiGravity": 9
+                },
+                "Acceleration": 1,
+                "Weight": 8,
+                "Handling": {
+                    "Ground": 2,
+                    "Water": 2,
+                    "Air": 2,
+                    "AntiGravity": 2
+                },
+                "OffRoadTraction": 0,
+                "MiniTurbo": 1,
+                "Invincibility": 4,
+                "OnRoadTraction": 10
+            },
+            "size": "Large"
+        },
+        "Roy": {
+            "name": "Roy",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/3/3e/MK8_Roy_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 9,
+                    "Water": 9,
+                    "Air": 9,
+                    "AntiGravity": 9
+                },
+                "Acceleration": 1,
+                "Weight": 8,
+                "Handling": {
+                    "Ground": 2,
+                    "Water": 2,
+                    "Air": 2,
+                    "AntiGravity": 2
+                },
+                "OffRoadTraction": 0,
+                "MiniTurbo": 1,
+                "Invincibility": 4,
+                "OnRoadTraction": 10
+            },
+            "size": "Large"
+        },
+        "Wario": {
+            "name": "Wario",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/c/c2/MK8_Wario_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 10,
+                    "Water": 10,
+                    "Air": 10,
+                    "AntiGravity": 10
+                },
+                "Acceleration": 0,
+                "Weight": 9,
+                "Handling": {
+                    "Ground": 1,
+                    "Water": 1,
+                    "Air": 1,
+                    "AntiGravity": 1
+                },
+                "OffRoadTraction": 1,
+                "MiniTurbo": 0,
+                "Invincibility": 5,
+                "OnRoadTraction": 5
+            },
+            "size": "Large"
+        },
+        "Dry Bowser": {
+            "name": "Dry Bowser",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/2/29/MK8_Dry_Bowser_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 10,
+                    "Water": 10,
+                    "Air": 10,
+                    "AntiGravity": 10
+                },
+                "Acceleration": 0,
+                "Weight": 9,
+                "Handling": {
+                    "Ground": 1,
+                    "Water": 1,
+                    "Air": 1,
+                    "AntiGravity": 1
+                },
+                "OffRoadTraction": 1,
+                "MiniTurbo": 0,
+                "Invincibility": 5,
+                "OnRoadTraction": 5
+            },
+            "size": "Large"
+        },
+        "Funky Kong": {
+            "name": "Funky Kong",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/4/4a/MK8DX_Funky_Kong_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 10,
+                    "Water": 10,
+                    "Air": 10,
+                    "AntiGravity": 10
+                },
+                "Acceleration": 0,
+                "Weight": 9,
+                "Handling": {
+                    "Ground": 1,
+                    "Water": 1,
+                    "Air": 1,
+                    "AntiGravity": 1
+                },
+                "OffRoadTraction": 1,
+                "MiniTurbo": 0,
+                "Invincibility": 5,
+                "OnRoadTraction": 5
+            },
+            "size": "Large"
+        },
+        "Mii (Heavy)": {
+            "name": "Mii (Heavy)",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/b/bb/Mii_MK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 10,
+                    "Water": 10,
+                    "Air": 10,
+                    "AntiGravity": 10
+                },
+                "Acceleration": 0,
+                "Weight": 9,
+                "Handling": {
+                    "Ground": 1,
+                    "Water": 1,
+                    "Air": 1,
+                    "AntiGravity": 1
+                },
+                "OffRoadTraction": 1,
+                "MiniTurbo": 0,
+                "Invincibility": 5,
+                "OnRoadTraction": 5
+            },
+            "size": "Large"
         },
         "Bowser": {
             "name": "Bowser",
             "type": "Driver",
-            "size": "Large",
-            "imgURL": "https://mario.wiki.gallery/images/thumb/4/47/MK8_Bowser_Icon.png/32px-MK8_Bowser_Icon.png",
+            "imgURL": "https://mario.wiki.gallery/images/4/47/MK8_Bowser_Icon.png",
             "stats": {
                 "Speed": {
                     "Ground": 10,
@@ -50,12 +1297,64 @@
                 "MiniTurbo": 0,
                 "Invincibility": 6,
                 "OnRoadTraction": 6
-            }
+            },
+            "size": "Large"
+        },
+        "Morton": {
+            "name": "Morton",
+            "type": "Driver",
+            "imgURL": "https://mario.wiki.gallery/images/7/72/MK8_Morton_Icon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 10,
+                    "Water": 10,
+                    "Air": 10,
+                    "AntiGravity": 10
+                },
+                "Acceleration": 0,
+                "Weight": 10,
+                "Handling": {
+                    "Ground": 0,
+                    "Water": 0,
+                    "Air": 0,
+                    "AntiGravity": 0
+                },
+                "OffRoadTraction": 0,
+                "MiniTurbo": 0,
+                "Invincibility": 6,
+                "OnRoadTraction": 6
+            },
+            "size": "Large"
         }
     },
     "Body": {
-        "Mr. Scooty": {
-            "name": "Mr. Scooty",
+        "Biddybuggy (Buggybud)": {
+            "name": "Biddybuggy (Buggybud)",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/4/45/BiddybuggyBodyMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 0,
+                    "Water": 1,
+                    "Air": 1,
+                    "AntiGravity": 2
+                },
+                "Acceleration": 7,
+                "Weight": 0,
+                "Handling": {
+                    "Ground": 5,
+                    "Water": 4,
+                    "Air": 4,
+                    "AntiGravity": 5
+                },
+                "OffRoadTraction": 4,
+                "MiniTurbo": 7,
+                "Invincibility": 0,
+                "OnRoadTraction": 1
+            }
+        },
+        "Mr. Scooty (Mr Scooty)": {
+            "name": "Mr. Scooty (Mr Scooty)",
             "type": "Body",
             "imgURL": "https://mario.wiki.gallery/images/1/18/MrScootyBodyMK8.png",
             "stats": {
@@ -79,10 +1378,235 @@
                 "OnRoadTraction": 1
             }
         },
-        "Flame Rider": {
-            "name": "Flame Rider",
+        "Streetle": {
+            "name": "Streetle",
             "type": "Body",
-            "imgURL": "https://mario.wiki.gallery/images/thumb/3/31/FlameRiderBodyMK8.png/75px-FlameRiderBodyMK8.png",
+            "imgURL": "https://mario.wiki.gallery/images/c/cf/MK8Streetle.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 2,
+                    "Water": 5,
+                    "Air": 2,
+                    "AntiGravity": 0
+                },
+                "Acceleration": 6,
+                "Weight": 0,
+                "Handling": {
+                    "Ground": 4,
+                    "Water": 5,
+                    "Air": 3,
+                    "AntiGravity": 2
+                },
+                "OffRoadTraction": 6,
+                "MiniTurbo": 6,
+                "Invincibility": 3,
+                "OnRoadTraction": 0
+            }
+        },
+        "Landship": {
+            "name": "Landship",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/6/6d/LandshipBodyMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 2,
+                    "Water": 5,
+                    "Air": 2,
+                    "AntiGravity": 0
+                },
+                "Acceleration": 6,
+                "Weight": 0,
+                "Handling": {
+                    "Ground": 4,
+                    "Water": 5,
+                    "Air": 3,
+                    "AntiGravity": 2
+                },
+                "OffRoadTraction": 6,
+                "MiniTurbo": 6,
+                "Invincibility": 2,
+                "OnRoadTraction": 0
+            }
+        },
+        "Pipe Frame": {
+            "name": "Pipe Frame",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/d/d1/PipeFrameBodyMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 2,
+                    "Water": 3,
+                    "Air": 1,
+                    "AntiGravity": 1
+                },
+                "Acceleration": 6,
+                "Weight": 1,
+                "Handling": {
+                    "Ground": 5,
+                    "Water": 4,
+                    "Air": 2,
+                    "AntiGravity": 4
+                },
+                "OffRoadTraction": 4,
+                "MiniTurbo": 6,
+                "Invincibility": 3,
+                "OnRoadTraction": 3
+            }
+        },
+        "Varmint": {
+            "name": "Varmint",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/d/d0/VarmintBodyMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 2,
+                    "Water": 3,
+                    "Air": 1,
+                    "AntiGravity": 1
+                },
+                "Acceleration": 6,
+                "Weight": 1,
+                "Handling": {
+                    "Ground": 5,
+                    "Water": 4,
+                    "Air": 2,
+                    "AntiGravity": 4
+                },
+                "OffRoadTraction": 4,
+                "MiniTurbo": 6,
+                "Invincibility": 2,
+                "OnRoadTraction": 3
+            }
+        },
+        "City Tripper": {
+            "name": "City Tripper",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/b/be/MK8_Light-Green_City_Tripper.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 2,
+                    "Water": 3,
+                    "Air": 1,
+                    "AntiGravity": 1
+                },
+                "Acceleration": 6,
+                "Weight": 1,
+                "Handling": {
+                    "Ground": 5,
+                    "Water": 4,
+                    "Air": 2,
+                    "AntiGravity": 4
+                },
+                "OffRoadTraction": 4,
+                "MiniTurbo": 6,
+                "Invincibility": 2,
+                "OnRoadTraction": 3
+            }
+        },
+        "Cat Cruiser": {
+            "name": "Cat Cruiser",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/f/f4/CatCruiserBodyMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 2,
+                    "Water": 2,
+                    "Air": 4,
+                    "AntiGravity": 3
+                },
+                "Acceleration": 5,
+                "Weight": 2,
+                "Handling": {
+                    "Ground": 4,
+                    "Water": 2,
+                    "Air": 4,
+                    "AntiGravity": 3
+                },
+                "OffRoadTraction": 3,
+                "MiniTurbo": 6,
+                "Invincibility": 3,
+                "OnRoadTraction": 4
+            }
+        },
+        "Comet": {
+            "name": "Comet",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/0/0e/CometBodyMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 2,
+                    "Water": 2,
+                    "Air": 4,
+                    "AntiGravity": 3
+                },
+                "Acceleration": 5,
+                "Weight": 2,
+                "Handling": {
+                    "Ground": 4,
+                    "Water": 2,
+                    "Air": 4,
+                    "AntiGravity": 3
+                },
+                "OffRoadTraction": 3,
+                "MiniTurbo": 6,
+                "Invincibility": 3,
+                "OnRoadTraction": 4
+            }
+        },
+        "Yoshi Bike": {
+            "name": "Yoshi Bike",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/6/62/YoshiBikeBodyMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 2,
+                    "Water": 2,
+                    "Air": 4,
+                    "AntiGravity": 3
+                },
+                "Acceleration": 5,
+                "Weight": 2,
+                "Handling": {
+                    "Ground": 4,
+                    "Water": 2,
+                    "Air": 4,
+                    "AntiGravity": 3
+                },
+                "OffRoadTraction": 3,
+                "MiniTurbo": 6,
+                "Invincibility": 2,
+                "OnRoadTraction": 4
+            }
+        },
+        "Teddy Buggy": {
+            "name": "Teddy Buggy",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/f/fa/TeddyBuggyBodyMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 2,
+                    "Water": 2,
+                    "Air": 4,
+                    "AntiGravity": 3
+                },
+                "Acceleration": 5,
+                "Weight": 2,
+                "Handling": {
+                    "Ground": 4,
+                    "Water": 2,
+                    "Air": 4,
+                    "AntiGravity": 3
+                },
+                "OffRoadTraction": 3,
+                "MiniTurbo": 6,
+                "Invincibility": 1,
+                "OnRoadTraction": 4
+            }
+        },
+        "W 25 Silver Arrow": {
+            "name": "W 25 Silver Arrow",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/2/25/W25SilverArrow-MK8.png",
             "stats": {
                 "Speed": {
                     "Ground": 2,
@@ -102,6 +1626,731 @@
                 "MiniTurbo": 5,
                 "Invincibility": 4,
                 "OnRoadTraction": 3
+            }
+        },
+        "Wild Wiggler": {
+            "name": "Wild Wiggler",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/a/aa/WildWigglerBodyMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 2,
+                    "Water": 2,
+                    "Air": 3,
+                    "AntiGravity": 4
+                },
+                "Acceleration": 5,
+                "Weight": 1,
+                "Handling": {
+                    "Ground": 4,
+                    "Water": 3,
+                    "Air": 3,
+                    "AntiGravity": 4
+                },
+                "OffRoadTraction": 5,
+                "MiniTurbo": 5,
+                "Invincibility": 4,
+                "OnRoadTraction": 3
+            }
+        },
+        "Standard Bike": {
+            "name": "Standard Bike",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/8/84/StandardBikeBodyMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 2,
+                    "Water": 2,
+                    "Air": 3,
+                    "AntiGravity": 4
+                },
+                "Acceleration": 5,
+                "Weight": 1,
+                "Handling": {
+                    "Ground": 4,
+                    "Water": 3,
+                    "Air": 3,
+                    "AntiGravity": 4
+                },
+                "OffRoadTraction": 5,
+                "MiniTurbo": 5,
+                "Invincibility": 4,
+                "OnRoadTraction": 3
+            }
+        },
+        "Flame Rider": {
+            "name": "Flame Rider",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/3/31/FlameRiderBodyMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 2,
+                    "Water": 2,
+                    "Air": 3,
+                    "AntiGravity": 4
+                },
+                "Acceleration": 5,
+                "Weight": 1,
+                "Handling": {
+                    "Ground": 4,
+                    "Water": 3,
+                    "Air": 3,
+                    "AntiGravity": 4
+                },
+                "OffRoadTraction": 5,
+                "MiniTurbo": 5,
+                "Invincibility": 4,
+                "OnRoadTraction": 3
+            }
+        },
+        "Mach 8": {
+            "name": "Mach 8",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/d/df/Mach8BodyMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 3,
+                    "Water": 3,
+                    "Air": 4,
+                    "AntiGravity": 5
+                },
+                "Acceleration": 3,
+                "Weight": 3,
+                "Handling": {
+                    "Ground": 2,
+                    "Water": 2,
+                    "Air": 2,
+                    "AntiGravity": 4
+                },
+                "OffRoadTraction": 4,
+                "MiniTurbo": 5,
+                "Invincibility": 3,
+                "OnRoadTraction": 2
+            }
+        },
+        "Sports Coupe (Sports Coupé)": {
+            "name": "Sports Coupe (Sports Coupé)",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/f/f8/SportsCoupeMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 3,
+                    "Water": 3,
+                    "Air": 4,
+                    "AntiGravity": 5
+                },
+                "Acceleration": 3,
+                "Weight": 3,
+                "Handling": {
+                    "Ground": 2,
+                    "Water": 2,
+                    "Air": 2,
+                    "AntiGravity": 4
+                },
+                "OffRoadTraction": 4,
+                "MiniTurbo": 5,
+                "Invincibility": 3,
+                "OnRoadTraction": 2
+            }
+        },
+        "Inkstriker": {
+            "name": "Inkstriker",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/e/eb/MK8DX_Inkstriker.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 3,
+                    "Water": 3,
+                    "Air": 4,
+                    "AntiGravity": 5
+                },
+                "Acceleration": 3,
+                "Weight": 3,
+                "Handling": {
+                    "Ground": 2,
+                    "Water": 2,
+                    "Air": 2,
+                    "AntiGravity": 4
+                },
+                "OffRoadTraction": 4,
+                "MiniTurbo": 5,
+                "Invincibility": 1,
+                "OnRoadTraction": 2
+            }
+        },
+        "Tanooki Kart": {
+            "name": "Tanooki Kart",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/7/76/MK8_Tanooki_Buggy_Sprite.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 3,
+                    "Water": 4,
+                    "Air": 3,
+                    "AntiGravity": 3
+                },
+                "Acceleration": 2,
+                "Weight": 3,
+                "Handling": {
+                    "Ground": 4,
+                    "Water": 4,
+                    "Air": 3,
+                    "AntiGravity": 3
+                },
+                "OffRoadTraction": 7,
+                "MiniTurbo": 5,
+                "Invincibility": 4,
+                "OnRoadTraction": 4
+            }
+        },
+        "Koopa Clown": {
+            "name": "Koopa Clown",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/7/70/MK8DX_Koopa_Clown.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 3,
+                    "Water": 4,
+                    "Air": 3,
+                    "AntiGravity": 3
+                },
+                "Acceleration": 2,
+                "Weight": 3,
+                "Handling": {
+                    "Ground": 4,
+                    "Water": 4,
+                    "Air": 3,
+                    "AntiGravity": 3
+                },
+                "OffRoadTraction": 7,
+                "MiniTurbo": 5,
+                "Invincibility": 3,
+                "OnRoadTraction": 4
+            }
+        },
+        "Master Cycle Zero": {
+            "name": "Master Cycle Zero",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/2/26/MK8D_Master_Cycle_Zero.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 3,
+                    "Water": 4,
+                    "Air": 3,
+                    "AntiGravity": 3
+                },
+                "Acceleration": 2,
+                "Weight": 3,
+                "Handling": {
+                    "Ground": 4,
+                    "Water": 4,
+                    "Air": 3,
+                    "AntiGravity": 3
+                },
+                "OffRoadTraction": 7,
+                "MiniTurbo": 5,
+                "Invincibility": 3,
+                "OnRoadTraction": 4
+            }
+        },
+        "300 SL Roadster": {
+            "name": "300 SL Roadster",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/f/f4/300SLRoadster_MK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 3,
+                    "Water": 3,
+                    "Air": 3,
+                    "AntiGravity": 3
+                },
+                "Acceleration": 4,
+                "Weight": 2,
+                "Handling": {
+                    "Ground": 3,
+                    "Water": 2,
+                    "Air": 3,
+                    "AntiGravity": 3
+                },
+                "OffRoadTraction": 3,
+                "MiniTurbo": 5,
+                "Invincibility": 4,
+                "OnRoadTraction": 3
+            }
+        },
+        "Standard Kart": {
+            "name": "Standard Kart",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/0/05/StandardKartBodyMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 3,
+                    "Water": 3,
+                    "Air": 3,
+                    "AntiGravity": 3
+                },
+                "Acceleration": 4,
+                "Weight": 2,
+                "Handling": {
+                    "Ground": 3,
+                    "Water": 2,
+                    "Air": 3,
+                    "AntiGravity": 3
+                },
+                "OffRoadTraction": 3,
+                "MiniTurbo": 5,
+                "Invincibility": 3,
+                "OnRoadTraction": 3
+            }
+        },
+        "The Duke": {
+            "name": "The Duke",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/8/8a/TheDukeBodyMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 3,
+                    "Water": 3,
+                    "Air": 3,
+                    "AntiGravity": 3
+                },
+                "Acceleration": 4,
+                "Weight": 2,
+                "Handling": {
+                    "Ground": 3,
+                    "Water": 2,
+                    "Air": 3,
+                    "AntiGravity": 3
+                },
+                "OffRoadTraction": 3,
+                "MiniTurbo": 5,
+                "Invincibility": 3,
+                "OnRoadTraction": 3
+            }
+        },
+        "Blue Falcon": {
+            "name": "Blue Falcon",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/f/f6/MK8BlueFalcon.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 4,
+                    "Water": 2,
+                    "Air": 3,
+                    "AntiGravity": 4
+                },
+                "Acceleration": 3,
+                "Weight": 0,
+                "Handling": {
+                    "Ground": 2,
+                    "Water": 3,
+                    "Air": 1,
+                    "AntiGravity": 5
+                },
+                "OffRoadTraction": 3,
+                "MiniTurbo": 4,
+                "Invincibility": 4,
+                "OnRoadTraction": 1
+            }
+        },
+        "Splat Buggy": {
+            "name": "Splat Buggy",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/6/63/MK8DX_Splat_Buggy.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 4,
+                    "Water": 2,
+                    "Air": 3,
+                    "AntiGravity": 4
+                },
+                "Acceleration": 3,
+                "Weight": 0,
+                "Handling": {
+                    "Ground": 2,
+                    "Water": 3,
+                    "Air": 1,
+                    "AntiGravity": 5
+                },
+                "OffRoadTraction": 3,
+                "MiniTurbo": 4,
+                "Invincibility": 3,
+                "OnRoadTraction": 1
+            }
+        },
+        "Prancer": {
+            "name": "Prancer",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/f/ff/PrancerBodyMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 4,
+                    "Water": 3,
+                    "Air": 3,
+                    "AntiGravity": 3
+                },
+                "Acceleration": 2,
+                "Weight": 1,
+                "Handling": {
+                    "Ground": 3,
+                    "Water": 3,
+                    "Air": 3,
+                    "AntiGravity": 2
+                },
+                "OffRoadTraction": 2,
+                "MiniTurbo": 4,
+                "Invincibility": 5,
+                "OnRoadTraction": 1
+            }
+        },
+        "Sport Bike": {
+            "name": "Sport Bike",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/f/fe/SportBikeBodyMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 4,
+                    "Water": 3,
+                    "Air": 3,
+                    "AntiGravity": 3
+                },
+                "Acceleration": 2,
+                "Weight": 1,
+                "Handling": {
+                    "Ground": 3,
+                    "Water": 3,
+                    "Air": 3,
+                    "AntiGravity": 2
+                },
+                "OffRoadTraction": 2,
+                "MiniTurbo": 4,
+                "Invincibility": 3,
+                "OnRoadTraction": 1
+            }
+        },
+        "Jet Bike": {
+            "name": "Jet Bike",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/1/12/JetBikeBodyMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 4,
+                    "Water": 3,
+                    "Air": 3,
+                    "AntiGravity": 3
+                },
+                "Acceleration": 2,
+                "Weight": 1,
+                "Handling": {
+                    "Ground": 3,
+                    "Water": 3,
+                    "Air": 3,
+                    "AntiGravity": 2
+                },
+                "OffRoadTraction": 2,
+                "MiniTurbo": 4,
+                "Invincibility": 3,
+                "OnRoadTraction": 1
+            }
+        },
+        "Sneeker (Bounder)": {
+            "name": "Sneeker (Bounder)",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/4/47/SneakerBodyMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 4,
+                    "Water": 2,
+                    "Air": 3,
+                    "AntiGravity": 3
+                },
+                "Acceleration": 2,
+                "Weight": 2,
+                "Handling": {
+                    "Ground": 3,
+                    "Water": 2,
+                    "Air": 2,
+                    "AntiGravity": 3
+                },
+                "OffRoadTraction": 0,
+                "MiniTurbo": 4,
+                "Invincibility": 5,
+                "OnRoadTraction": 1
+            }
+        },
+        "Gold Standard (Gold Kart)": {
+            "name": "Gold Standard (Gold Kart)",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/f/fe/Gold_Standard.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 4,
+                    "Water": 2,
+                    "Air": 3,
+                    "AntiGravity": 3
+                },
+                "Acceleration": 2,
+                "Weight": 2,
+                "Handling": {
+                    "Ground": 3,
+                    "Water": 2,
+                    "Air": 2,
+                    "AntiGravity": 3
+                },
+                "OffRoadTraction": 0,
+                "MiniTurbo": 4,
+                "Invincibility": 4,
+                "OnRoadTraction": 1
+            }
+        },
+        "Master Cycle": {
+            "name": "Master Cycle",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/8/8a/MK8MasterCycle.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 4,
+                    "Water": 2,
+                    "Air": 3,
+                    "AntiGravity": 3
+                },
+                "Acceleration": 2,
+                "Weight": 2,
+                "Handling": {
+                    "Ground": 3,
+                    "Water": 2,
+                    "Air": 2,
+                    "AntiGravity": 3
+                },
+                "OffRoadTraction": 0,
+                "MiniTurbo": 4,
+                "Invincibility": 3,
+                "OnRoadTraction": 1
+            }
+        },
+        "Steel Driver": {
+            "name": "Steel Driver",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/9/94/Steel_Driver.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 4,
+                    "Water": 5,
+                    "Air": 0,
+                    "AntiGravity": 2
+                },
+                "Acceleration": 1,
+                "Weight": 4,
+                "Handling": {
+                    "Ground": 1,
+                    "Water": 5,
+                    "Air": 1,
+                    "AntiGravity": 1
+                },
+                "OffRoadTraction": 3,
+                "MiniTurbo": 3,
+                "Invincibility": 6,
+                "OnRoadTraction": 1
+            }
+        },
+        "Tri-Speeder": {
+            "name": "Tri-Speeder",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/5/56/TrispeederBodyMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 4,
+                    "Water": 5,
+                    "Air": 0,
+                    "AntiGravity": 2
+                },
+                "Acceleration": 1,
+                "Weight": 4,
+                "Handling": {
+                    "Ground": 1,
+                    "Water": 5,
+                    "Air": 1,
+                    "AntiGravity": 1
+                },
+                "OffRoadTraction": 3,
+                "MiniTurbo": 3,
+                "Invincibility": 6,
+                "OnRoadTraction": 1
+            }
+        },
+        "Bone Rattler": {
+            "name": "Bone Rattler",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/0/0a/MK8BoneRattler.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 4,
+                    "Water": 5,
+                    "Air": 0,
+                    "AntiGravity": 2
+                },
+                "Acceleration": 1,
+                "Weight": 4,
+                "Handling": {
+                    "Ground": 1,
+                    "Water": 5,
+                    "Air": 1,
+                    "AntiGravity": 1
+                },
+                "OffRoadTraction": 3,
+                "MiniTurbo": 3,
+                "Invincibility": 5,
+                "OnRoadTraction": 1
+            }
+        },
+        "Circuit Special": {
+            "name": "Circuit Special",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/6/6c/CircuitSpecialBodyMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 5,
+                    "Water": 1,
+                    "Air": 2,
+                    "AntiGravity": 4
+                },
+                "Acceleration": 1,
+                "Weight": 3,
+                "Handling": {
+                    "Ground": 1,
+                    "Water": 1,
+                    "Air": 0,
+                    "AntiGravity": 2
+                },
+                "OffRoadTraction": 1,
+                "MiniTurbo": 3,
+                "Invincibility": 6,
+                "OnRoadTraction": 3
+            }
+        },
+        "B Dasher": {
+            "name": "B Dasher",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/1/15/ZeldaMK8Bdasher.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 5,
+                    "Water": 1,
+                    "Air": 2,
+                    "AntiGravity": 4
+                },
+                "Acceleration": 1,
+                "Weight": 3,
+                "Handling": {
+                    "Ground": 1,
+                    "Water": 1,
+                    "Air": 0,
+                    "AntiGravity": 2
+                },
+                "OffRoadTraction": 1,
+                "MiniTurbo": 3,
+                "Invincibility": 6,
+                "OnRoadTraction": 3
+            }
+        },
+        "P-Wing": {
+            "name": "P-Wing",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/c/cd/MK8PWing.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 5,
+                    "Water": 1,
+                    "Air": 2,
+                    "AntiGravity": 4
+                },
+                "Acceleration": 1,
+                "Weight": 3,
+                "Handling": {
+                    "Ground": 1,
+                    "Water": 1,
+                    "Air": 0,
+                    "AntiGravity": 2
+                },
+                "OffRoadTraction": 1,
+                "MiniTurbo": 3,
+                "Invincibility": 6,
+                "OnRoadTraction": 3
+            }
+        },
+        "Badwagon": {
+            "name": "Badwagon",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/c/c2/BadwagonBodyMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 5,
+                    "Water": 2,
+                    "Air": 1,
+                    "AntiGravity": 3
+                },
+                "Acceleration": 0,
+                "Weight": 4,
+                "Handling": {
+                    "Ground": 0,
+                    "Water": 1,
+                    "Air": 0,
+                    "AntiGravity": 1
+                },
+                "OffRoadTraction": 5,
+                "MiniTurbo": 3,
+                "Invincibility": 7,
+                "OnRoadTraction": 2
+            }
+        },
+        "GLA": {
+            "name": "GLA",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/c/c2/GLA-MK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 5,
+                    "Water": 2,
+                    "Air": 1,
+                    "AntiGravity": 3
+                },
+                "Acceleration": 0,
+                "Weight": 4,
+                "Handling": {
+                    "Ground": 0,
+                    "Water": 1,
+                    "Air": 0,
+                    "AntiGravity": 1
+                },
+                "OffRoadTraction": 5,
+                "MiniTurbo": 3,
+                "Invincibility": 7,
+                "OnRoadTraction": 2
+            }
+        },
+        "Standard ATV (Standard Quad)": {
+            "name": "Standard ATV (Standard Quad)",
+            "type": "Body",
+            "imgURL": "https://mario.wiki.gallery/images/2/23/StandardATVBodyMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 5,
+                    "Water": 2,
+                    "Air": 1,
+                    "AntiGravity": 3
+                },
+                "Acceleration": 0,
+                "Weight": 4,
+                "Handling": {
+                    "Ground": 0,
+                    "Water": 1,
+                    "Air": 0,
+                    "AntiGravity": 1
+                },
+                "OffRoadTraction": 5,
+                "MiniTurbo": 3,
+                "Invincibility": 6,
+                "OnRoadTraction": 2
             }
         }
     },
@@ -131,10 +2380,360 @@
                 "OnRoadTraction": 0
             }
         },
-        "Retro Off-Road": {
-            "name": "Retro Off-Road",
+        "Azure Roller": {
+            "name": "Azure Roller",
             "type": "Tires",
-            "imgURL": "https://mario.wiki.gallery/images/thumb/4/48/Retro_Off-Road.png/75px-Retro_Off-Road.png",
+            "imgURL": "https://mario.wiki.gallery/images/f/fe/AzureRollerTiresMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 0,
+                    "Water": 3,
+                    "Air": 3,
+                    "AntiGravity": 0
+                },
+                "Acceleration": 6,
+                "Weight": 0,
+                "Handling": {
+                    "Ground": 4,
+                    "Water": 4,
+                    "Air": 4,
+                    "AntiGravity": 4
+                },
+                "OffRoadTraction": 4,
+                "MiniTurbo": 6,
+                "Invincibility": 0,
+                "OnRoadTraction": 0
+            }
+        },
+        "Button": {
+            "name": "Button",
+            "type": "Tires",
+            "imgURL": "https://mario.wiki.gallery/images/0/07/ButtonTiresMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 1,
+                    "Water": 2,
+                    "Air": 2,
+                    "AntiGravity": 2
+                },
+                "Acceleration": 5,
+                "Weight": 0,
+                "Handling": {
+                    "Ground": 3,
+                    "Water": 3,
+                    "Air": 2,
+                    "AntiGravity": 4
+                },
+                "OffRoadTraction": 3,
+                "MiniTurbo": 5,
+                "Invincibility": 3,
+                "OnRoadTraction": 1
+            }
+        },
+        "Leaf Tires (Leaf Tyres)": {
+            "name": "Leaf Tires (Leaf Tyres)",
+            "type": "Tires",
+            "imgURL": "https://mario.wiki.gallery/images/f/f9/Leaf_Tires_MK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 1,
+                    "Water": 2,
+                    "Air": 2,
+                    "AntiGravity": 2
+                },
+                "Acceleration": 5,
+                "Weight": 0,
+                "Handling": {
+                    "Ground": 3,
+                    "Water": 3,
+                    "Air": 2,
+                    "AntiGravity": 4
+                },
+                "OffRoadTraction": 3,
+                "MiniTurbo": 5,
+                "Invincibility": 3,
+                "OnRoadTraction": 1
+            }
+        },
+        "Cushion": {
+            "name": "Cushion",
+            "type": "Tires",
+            "imgURL": "https://mario.wiki.gallery/images/9/92/CushionTiresMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 1,
+                    "Water": 1,
+                    "Air": 4,
+                    "AntiGravity": 1
+                },
+                "Acceleration": 4,
+                "Weight": 1,
+                "Handling": {
+                    "Ground": 2,
+                    "Water": 1,
+                    "Air": 3,
+                    "AntiGravity": 2
+                },
+                "OffRoadTraction": 6,
+                "MiniTurbo": 5,
+                "Invincibility": 6,
+                "OnRoadTraction": 2
+            }
+        },
+        "Sponge": {
+            "name": "Sponge",
+            "type": "Tires",
+            "imgURL": "https://mario.wiki.gallery/images/4/4c/SpongeTiresMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 1,
+                    "Water": 1,
+                    "Air": 4,
+                    "AntiGravity": 1
+                },
+                "Acceleration": 4,
+                "Weight": 1,
+                "Handling": {
+                    "Ground": 2,
+                    "Water": 1,
+                    "Air": 3,
+                    "AntiGravity": 2
+                },
+                "OffRoadTraction": 6,
+                "MiniTurbo": 5,
+                "Invincibility": 4,
+                "OnRoadTraction": 2
+            }
+        },
+        "GLA Tires (GLA Wheels)": {
+            "name": "GLA Tires (GLA Wheels)",
+            "type": "Tires",
+            "imgURL": "https://mario.wiki.gallery/images/b/ba/GLATires-MK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 2,
+                    "Water": 3,
+                    "Air": 3,
+                    "AntiGravity": 2
+                },
+                "Acceleration": 4,
+                "Weight": 2,
+                "Handling": {
+                    "Ground": 3,
+                    "Water": 3,
+                    "Air": 3,
+                    "AntiGravity": 3
+                },
+                "OffRoadTraction": 5,
+                "MiniTurbo": 4,
+                "Invincibility": 5,
+                "OnRoadTraction": 2
+            }
+        },
+        "Standard (Normal)": {
+            "name": "Standard (Normal)",
+            "type": "Tires",
+            "imgURL": "https://mario.wiki.gallery/images/a/a8/StandardTiresMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 2,
+                    "Water": 3,
+                    "Air": 3,
+                    "AntiGravity": 2
+                },
+                "Acceleration": 4,
+                "Weight": 2,
+                "Handling": {
+                    "Ground": 3,
+                    "Water": 3,
+                    "Air": 3,
+                    "AntiGravity": 3
+                },
+                "OffRoadTraction": 5,
+                "MiniTurbo": 4,
+                "Invincibility": 4,
+                "OnRoadTraction": 2
+            }
+        },
+        "Blue Standard (Normal Blue)": {
+            "name": "Blue Standard (Normal Blue)",
+            "type": "Tires",
+            "imgURL": "https://mario.wiki.gallery/images/d/db/Blue_Standard.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 2,
+                    "Water": 3,
+                    "Air": 3,
+                    "AntiGravity": 2
+                },
+                "Acceleration": 4,
+                "Weight": 2,
+                "Handling": {
+                    "Ground": 3,
+                    "Water": 3,
+                    "Air": 3,
+                    "AntiGravity": 3
+                },
+                "OffRoadTraction": 5,
+                "MiniTurbo": 4,
+                "Invincibility": 4,
+                "OnRoadTraction": 2
+            }
+        },
+        "Slim": {
+            "name": "Slim",
+            "type": "Tires",
+            "imgURL": "https://mario.wiki.gallery/images/f/f8/SlimTiresMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 3,
+                    "Water": 2,
+                    "Air": 2,
+                    "AntiGravity": 4
+                },
+                "Acceleration": 2,
+                "Weight": 2,
+                "Handling": {
+                    "Ground": 4,
+                    "Water": 4,
+                    "Air": 4,
+                    "AntiGravity": 3
+                },
+                "OffRoadTraction": 1,
+                "MiniTurbo": 3,
+                "Invincibility": 5,
+                "OnRoadTraction": 4
+            }
+        },
+        "Crimson Slim": {
+            "name": "Crimson Slim",
+            "type": "Tires",
+            "imgURL": "https://mario.wiki.gallery/images/7/71/CrimsonSlimTiresMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 3,
+                    "Water": 2,
+                    "Air": 2,
+                    "AntiGravity": 4
+                },
+                "Acceleration": 2,
+                "Weight": 2,
+                "Handling": {
+                    "Ground": 4,
+                    "Water": 4,
+                    "Air": 4,
+                    "AntiGravity": 3
+                },
+                "OffRoadTraction": 1,
+                "MiniTurbo": 3,
+                "Invincibility": 5,
+                "OnRoadTraction": 4
+            }
+        },
+        "Wood (Wooden)": {
+            "name": "Wood (Wooden)",
+            "type": "Tires",
+            "imgURL": "https://mario.wiki.gallery/images/0/03/WoodTiresMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 3,
+                    "Water": 2,
+                    "Air": 2,
+                    "AntiGravity": 4
+                },
+                "Acceleration": 2,
+                "Weight": 2,
+                "Handling": {
+                    "Ground": 4,
+                    "Water": 4,
+                    "Air": 4,
+                    "AntiGravity": 3
+                },
+                "OffRoadTraction": 1,
+                "MiniTurbo": 3,
+                "Invincibility": 5,
+                "OnRoadTraction": 4
+            }
+        },
+        "Monster": {
+            "name": "Monster",
+            "type": "Tires",
+            "imgURL": "https://mario.wiki.gallery/images/2/29/MonsterTiresMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 3,
+                    "Water": 2,
+                    "Air": 1,
+                    "AntiGravity": 2
+                },
+                "Acceleration": 2,
+                "Weight": 4,
+                "Handling": {
+                    "Ground": 0,
+                    "Water": 1,
+                    "Air": 1,
+                    "AntiGravity": 0
+                },
+                "OffRoadTraction": 7,
+                "MiniTurbo": 3,
+                "Invincibility": 6,
+                "OnRoadTraction": 3
+            }
+        },
+        "Hot Monster (Funky Monster)": {
+            "name": "Hot Monster (Funky Monster)",
+            "type": "Tires",
+            "imgURL": "https://mario.wiki.gallery/images/d/d1/HotMonsterTiresMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 3,
+                    "Water": 2,
+                    "Air": 1,
+                    "AntiGravity": 2
+                },
+                "Acceleration": 2,
+                "Weight": 4,
+                "Handling": {
+                    "Ground": 0,
+                    "Water": 1,
+                    "Air": 1,
+                    "AntiGravity": 0
+                },
+                "OffRoadTraction": 7,
+                "MiniTurbo": 3,
+                "Invincibility": 6,
+                "OnRoadTraction": 3
+            }
+        },
+        "Ancient Tires": {
+            "name": "Ancient Tires",
+            "type": "Tires",
+            "imgURL": "https://mario.wiki.gallery/images/d/d5/MK8D_Ancient_Tires.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 3,
+                    "Water": 2,
+                    "Air": 1,
+                    "AntiGravity": 2
+                },
+                "Acceleration": 2,
+                "Weight": 4,
+                "Handling": {
+                    "Ground": 0,
+                    "Water": 1,
+                    "Air": 1,
+                    "AntiGravity": 0
+                },
+                "OffRoadTraction": 7,
+                "MiniTurbo": 3,
+                "Invincibility": 5,
+                "OnRoadTraction": 3
+            }
+        },
+        "Off-Road": {
+            "name": "Off-Road",
+            "type": "Tires",
+            "imgURL": "https://mario.wiki.gallery/images/2/25/Off-Road.png",
             "stats": {
                 "Speed": {
                     "Ground": 3,
@@ -154,6 +2753,156 @@
                 "MiniTurbo": 3,
                 "Invincibility": 6,
                 "OnRoadTraction": 3
+            }
+        },
+        "Retro Off-Road": {
+            "name": "Retro Off-Road",
+            "type": "Tires",
+            "imgURL": "https://mario.wiki.gallery/images/4/48/Retro_Off-Road.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 3,
+                    "Water": 4,
+                    "Air": 1,
+                    "AntiGravity": 2
+                },
+                "Acceleration": 3,
+                "Weight": 3,
+                "Handling": {
+                    "Ground": 1,
+                    "Water": 1,
+                    "Air": 2,
+                    "AntiGravity": 2
+                },
+                "OffRoadTraction": 6,
+                "MiniTurbo": 3,
+                "Invincibility": 6,
+                "OnRoadTraction": 3
+            }
+        },
+        "Triforce Tires (Triforce Tyres)": {
+            "name": "Triforce Tires (Triforce Tyres)",
+            "type": "Tires",
+            "imgURL": "https://mario.wiki.gallery/images/9/9d/MK8-TriforceTires.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 3,
+                    "Water": 4,
+                    "Air": 1,
+                    "AntiGravity": 2
+                },
+                "Acceleration": 3,
+                "Weight": 3,
+                "Handling": {
+                    "Ground": 1,
+                    "Water": 1,
+                    "Air": 2,
+                    "AntiGravity": 2
+                },
+                "OffRoadTraction": 6,
+                "MiniTurbo": 3,
+                "Invincibility": 6,
+                "OnRoadTraction": 3
+            }
+        },
+        "Slick": {
+            "name": "Slick",
+            "type": "Tires",
+            "imgURL": "https://mario.wiki.gallery/images/d/dd/SlickTiresMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 4,
+                    "Water": 0,
+                    "Air": 0,
+                    "AntiGravity": 4
+                },
+                "Acceleration": 1,
+                "Weight": 3,
+                "Handling": {
+                    "Ground": 2,
+                    "Water": 0,
+                    "Air": 1,
+                    "AntiGravity": 2
+                },
+                "OffRoadTraction": 0,
+                "MiniTurbo": 2,
+                "Invincibility": 5,
+                "OnRoadTraction": 4
+            }
+        },
+        "Cyber Slick": {
+            "name": "Cyber Slick",
+            "type": "Tires",
+            "imgURL": "https://mario.wiki.gallery/images/2/29/CyberSlickTiresMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 4,
+                    "Water": 0,
+                    "Air": 0,
+                    "AntiGravity": 4
+                },
+                "Acceleration": 1,
+                "Weight": 3,
+                "Handling": {
+                    "Ground": 2,
+                    "Water": 0,
+                    "Air": 1,
+                    "AntiGravity": 2
+                },
+                "OffRoadTraction": 0,
+                "MiniTurbo": 2,
+                "Invincibility": 5,
+                "OnRoadTraction": 4
+            }
+        },
+        "Metal": {
+            "name": "Metal",
+            "type": "Tires",
+            "imgURL": "https://mario.wiki.gallery/images/9/96/MetalTiresMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 4,
+                    "Water": 3,
+                    "Air": 2,
+                    "AntiGravity": 1
+                },
+                "Acceleration": 0,
+                "Weight": 4,
+                "Handling": {
+                    "Ground": 2,
+                    "Water": 2,
+                    "Air": 0,
+                    "AntiGravity": 1
+                },
+                "OffRoadTraction": 2,
+                "MiniTurbo": 2,
+                "Invincibility": 6,
+                "OnRoadTraction": 1
+            }
+        },
+        "Gold Tires (Gold Wheels)": {
+            "name": "Gold Tires (Gold Wheels)",
+            "type": "Tires",
+            "imgURL": "https://mario.wiki.gallery/images/5/52/Gold_Tires_MK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 4,
+                    "Water": 3,
+                    "Air": 2,
+                    "AntiGravity": 1
+                },
+                "Acceleration": 0,
+                "Weight": 4,
+                "Handling": {
+                    "Ground": 2,
+                    "Water": 2,
+                    "Air": 0,
+                    "AntiGravity": 1
+                },
+                "OffRoadTraction": 2,
+                "MiniTurbo": 2,
+                "Invincibility": 5,
+                "OnRoadTraction": 1
             }
         }
     },
@@ -183,10 +2932,185 @@
                 "OnRoadTraction": 1
             }
         },
+        "Parachute": {
+            "name": "Parachute",
+            "type": "Glider",
+            "imgURL": "https://mario.wiki.gallery/images/d/dd/ParachuteGliderMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 0,
+                    "Water": 1,
+                    "Air": 1,
+                    "AntiGravity": 1
+                },
+                "Acceleration": 2,
+                "Weight": 0,
+                "Handling": {
+                    "Ground": 1,
+                    "Water": 0,
+                    "Air": 2,
+                    "AntiGravity": 1
+                },
+                "OffRoadTraction": 1,
+                "MiniTurbo": 2,
+                "Invincibility": 0,
+                "OnRoadTraction": 1
+            }
+        },
+        "Flower Glider": {
+            "name": "Flower Glider",
+            "type": "Glider",
+            "imgURL": "https://mario.wiki.gallery/images/b/b3/FlowerGliderMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 0,
+                    "Water": 1,
+                    "Air": 1,
+                    "AntiGravity": 1
+                },
+                "Acceleration": 2,
+                "Weight": 0,
+                "Handling": {
+                    "Ground": 1,
+                    "Water": 0,
+                    "Air": 2,
+                    "AntiGravity": 1
+                },
+                "OffRoadTraction": 1,
+                "MiniTurbo": 2,
+                "Invincibility": 0,
+                "OnRoadTraction": 1
+            }
+        },
+        "Paper Glider": {
+            "name": "Paper Glider",
+            "type": "Glider",
+            "imgURL": "https://mario.wiki.gallery/images/0/0e/PaperGliderIcon-MK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 0,
+                    "Water": 1,
+                    "Air": 1,
+                    "AntiGravity": 1
+                },
+                "Acceleration": 2,
+                "Weight": 0,
+                "Handling": {
+                    "Ground": 1,
+                    "Water": 0,
+                    "Air": 2,
+                    "AntiGravity": 1
+                },
+                "OffRoadTraction": 1,
+                "MiniTurbo": 2,
+                "Invincibility": 0,
+                "OnRoadTraction": 1
+            }
+        },
+        "Peach Parasol": {
+            "name": "Peach Parasol",
+            "type": "Glider",
+            "imgURL": "https://mario.wiki.gallery/images/6/6e/PeachParasolGliderMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 0,
+                    "Water": 0,
+                    "Air": 1,
+                    "AntiGravity": 1
+                },
+                "Acceleration": 2,
+                "Weight": 1,
+                "Handling": {
+                    "Ground": 1,
+                    "Water": 1,
+                    "Air": 2,
+                    "AntiGravity": 0
+                },
+                "OffRoadTraction": 0,
+                "MiniTurbo": 2,
+                "Invincibility": 0,
+                "OnRoadTraction": 2
+            }
+        },
+        "Parafoil": {
+            "name": "Parafoil",
+            "type": "Glider",
+            "imgURL": "https://mario.wiki.gallery/images/c/c4/ParafoilGliderMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 0,
+                    "Water": 0,
+                    "Air": 1,
+                    "AntiGravity": 1
+                },
+                "Acceleration": 2,
+                "Weight": 1,
+                "Handling": {
+                    "Ground": 1,
+                    "Water": 1,
+                    "Air": 2,
+                    "AntiGravity": 0
+                },
+                "OffRoadTraction": 0,
+                "MiniTurbo": 2,
+                "Invincibility": 0,
+                "OnRoadTraction": 2
+            }
+        },
+        "Bowser Kite": {
+            "name": "Bowser Kite",
+            "type": "Glider",
+            "imgURL": "https://mario.wiki.gallery/images/f/f7/BowserKiteMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 0,
+                    "Water": 0,
+                    "Air": 1,
+                    "AntiGravity": 1
+                },
+                "Acceleration": 2,
+                "Weight": 1,
+                "Handling": {
+                    "Ground": 1,
+                    "Water": 1,
+                    "Air": 2,
+                    "AntiGravity": 0
+                },
+                "OffRoadTraction": 0,
+                "MiniTurbo": 2,
+                "Invincibility": 0,
+                "OnRoadTraction": 2
+            }
+        },
+        "MKTV Parafoil": {
+            "name": "MKTV Parafoil",
+            "type": "Glider",
+            "imgURL": "https://mario.wiki.gallery/images/9/96/MKTVParafoilGliderMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 0,
+                    "Water": 0,
+                    "Air": 1,
+                    "AntiGravity": 1
+                },
+                "Acceleration": 2,
+                "Weight": 1,
+                "Handling": {
+                    "Ground": 1,
+                    "Water": 1,
+                    "Air": 2,
+                    "AntiGravity": 0
+                },
+                "OffRoadTraction": 0,
+                "MiniTurbo": 2,
+                "Invincibility": 0,
+                "OnRoadTraction": 2
+            }
+        },
         "Wario Wing": {
             "name": "Wario Wing",
             "type": "Glider",
-            "imgURL": "https://mario.wiki.gallery/images/thumb/1/18/GoldGliderMK8.png/75px-GoldGliderMK8.png",
+            "imgURL": "https://mario.wiki.gallery/images/a/ae/WarioWingMK8.png",
             "stats": {
                 "Speed": {
                     "Ground": 1,
@@ -206,6 +3130,156 @@
                 "MiniTurbo": 1,
                 "Invincibility": 1,
                 "OnRoadTraction": 2
+            }
+        },
+        "Plane Glider": {
+            "name": "Plane Glider",
+            "type": "Glider",
+            "imgURL": "https://mario.wiki.gallery/images/c/ca/PlaneGliderMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 1,
+                    "Water": 0,
+                    "Air": 2,
+                    "AntiGravity": 1
+                },
+                "Acceleration": 1,
+                "Weight": 2,
+                "Handling": {
+                    "Ground": 1,
+                    "Water": 1,
+                    "Air": 1,
+                    "AntiGravity": 0
+                },
+                "OffRoadTraction": 0,
+                "MiniTurbo": 1,
+                "Invincibility": 1,
+                "OnRoadTraction": 2
+            }
+        },
+        "Gold Glider": {
+            "name": "Gold Glider",
+            "type": "Glider",
+            "imgURL": "https://mario.wiki.gallery/images/1/18/GoldGliderMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 1,
+                    "Water": 0,
+                    "Air": 2,
+                    "AntiGravity": 1
+                },
+                "Acceleration": 1,
+                "Weight": 2,
+                "Handling": {
+                    "Ground": 1,
+                    "Water": 1,
+                    "Air": 1,
+                    "AntiGravity": 0
+                },
+                "OffRoadTraction": 0,
+                "MiniTurbo": 1,
+                "Invincibility": 1,
+                "OnRoadTraction": 2
+            }
+        },
+        "Paraglider (The Legend of Zelda)": {
+            "name": "Paraglider (The Legend of Zelda)",
+            "type": "Glider",
+            "imgURL": "https://mario.wiki.gallery/images/3/39/MK8D_Paraglider.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 1,
+                    "Water": 0,
+                    "Air": 2,
+                    "AntiGravity": 1
+                },
+                "Acceleration": 1,
+                "Weight": 2,
+                "Handling": {
+                    "Ground": 1,
+                    "Water": 1,
+                    "Air": 1,
+                    "AntiGravity": 0
+                },
+                "OffRoadTraction": 0,
+                "MiniTurbo": 1,
+                "Invincibility": 1,
+                "OnRoadTraction": 2
+            }
+        },
+        "Super Glider": {
+            "name": "Super Glider",
+            "type": "Glider",
+            "imgURL": "https://mario.wiki.gallery/images/a/a8/SuperGliderMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 1,
+                    "Water": 1,
+                    "Air": 2,
+                    "AntiGravity": 0
+                },
+                "Acceleration": 1,
+                "Weight": 1,
+                "Handling": {
+                    "Ground": 1,
+                    "Water": 0,
+                    "Air": 1,
+                    "AntiGravity": 1
+                },
+                "OffRoadTraction": 1,
+                "MiniTurbo": 1,
+                "Invincibility": 1,
+                "OnRoadTraction": 1
+            }
+        },
+        "Waddle Wing": {
+            "name": "Waddle Wing",
+            "type": "Glider",
+            "imgURL": "https://mario.wiki.gallery/images/e/ef/WaddleWingMK8.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 1,
+                    "Water": 1,
+                    "Air": 2,
+                    "AntiGravity": 0
+                },
+                "Acceleration": 1,
+                "Weight": 1,
+                "Handling": {
+                    "Ground": 1,
+                    "Water": 0,
+                    "Air": 1,
+                    "AntiGravity": 1
+                },
+                "OffRoadTraction": 1,
+                "MiniTurbo": 1,
+                "Invincibility": 1,
+                "OnRoadTraction": 1
+            }
+        },
+        "Hylian Kite": {
+            "name": "Hylian Kite",
+            "type": "Glider",
+            "imgURL": "https://mario.wiki.gallery/images/9/9c/MK8-HylianKite.png",
+            "stats": {
+                "Speed": {
+                    "Ground": 1,
+                    "Water": 1,
+                    "Air": 2,
+                    "AntiGravity": 0
+                },
+                "Acceleration": 1,
+                "Weight": 1,
+                "Handling": {
+                    "Ground": 1,
+                    "Water": 0,
+                    "Air": 1,
+                    "AntiGravity": 1
+                },
+                "OffRoadTraction": 1,
+                "MiniTurbo": 1,
+                "Invincibility": 1,
+                "OnRoadTraction": 1
             }
         }
     }
