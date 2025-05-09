@@ -51,7 +51,7 @@ def process_table_data(table):
     config = TABLE_CONFIGS.get(title)
     if not config:
         print(f"No config found for table: {title}")
-        return
+        return []
 
     # Get the columns to skip from the config
     skip_cols = config["skip_cols"]
@@ -63,50 +63,60 @@ def process_table_data(table):
     # Create empty components array to store the components from this table
     components = []
 
+    # Store last seen size value to handle rowspan in Drivers table
+    last_size = None
+
     # Loop though each row in the table
     for row in rows:
         # Find all the individual table cells
         cells = row.find_all(['td', 'th'])
-        # Make sure we only check the cells that have not been skipped
-        if len(cells) < skip_cols + 1:
-            continue
+
+        # Deal with handling all rows in the drivers table due to the size cells spanning
+        if title == "Drivers (DV)":
+            # If the row contains the size cell (which has the rowspan property)
+            if cells[0].has_attr("rowspan"):
+                # Get the new size value and set it as the current size
+                last_size = cells[0].get_text(strip=True)
+                size = last_size
+                # As this row contains the size cell, the name and stats start after that.
+                name_cell = cells[1]
+                stat_cells = cells[2:]
+            else:
+                # No size cell, so name and stats start one cell earlier
+                size = last_size
+                name_cell = cells[0]
+                stat_cells = cells[1:]
+        else:
+            # Non-driver tables behave normally
+            size = None
+            name_cell = cells[name_index]
+            stat_cells = cells[skip_cols:]
 
         # Get all the <a> tags inside the cell that contains the component images
-        name_cell = cells[name_index]
         a_tags = name_cell.find_all('a', title=True)
         if not a_tags:
             continue
 
-        # Get the cells that contain the stats (the ones after the cells that need to be skipped)
-        stat_cells = cells[skip_cols:]
-
         stats = {}
 
-        # Iterate though each pair from the shared stats and the cells
+        # Iterate through each pair from the shared stats and the cells
         for (group, sub), cell in zip(SHARED_STATS, stat_cells):
             print(f"Processing: Group = {group}, Sub = {sub}, Value = {cell.get_text(strip=True)}")
-            # Get the text content from that cell and convert it to an integer
             value = cell.get_text(strip=True)
             try:
                 value = int(value)
             except ValueError:
-                print(f"Skipping non-integer value: {cell.get_text(strip=True)}")
+                print(f"Skipping non-integer value: {value}")
                 continue
 
-            # Get the mapped stat key
             mapped_key = STAT_KEY_MAP.get(sub or group)
-
             if not mapped_key:
-                continue  # Skip if there's no mapped key
+                continue  # Skip if no mapped key
 
-            # Add the value either to the sub category or group
             if sub:
                 stats.setdefault(group, {})[mapped_key] = value
             else:
                 stats[mapped_key] = value
-
-        # Get the size value if its the Drivers Table
-        size = cells[0].get_text(strip=True) if title == "Drivers (DV)" else None
 
         # For each <a> tag, create a new component and add the data in.
         for a in a_tags:
@@ -126,6 +136,9 @@ def process_table_data(table):
             components.append(component)
 
     return components
+
+
+
 
 
 '''
