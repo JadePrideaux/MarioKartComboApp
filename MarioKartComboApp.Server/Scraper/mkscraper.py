@@ -1,5 +1,6 @@
 ﻿from functions.get_page import get_page
 from functions.extract_data import extract_data
+from functions.save_to_json import save_to_json
 
 url = "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics"
 
@@ -7,4 +8,7 @@ url = "https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics"
 html = get_page(url)
 
 # Extract Data from the HTML page
-extract_data(html)
+data = extract_data(html)
+
+# Save the data to a JSON
+save_to_json(data)

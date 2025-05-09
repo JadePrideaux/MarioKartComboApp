@@ -1,13 +1,30 @@
 from bs4 import BeautifulSoup
+from constants.constants import TABLE_CONFIGS, SHARED_STATS, STAT_KEY_MAP, TYPE_KEY_MAP
 
 
 def extract_data(html):
     # Parse HTML data and find the tables
     tables = select_tables(html)
+    structured_data = {}
     # Iterate through tables
     for table in tables:
-        process_table_data(table)
-    # Store Extracted Data
+        # Get all the components from that table
+        components = process_table_data(table)
+
+        # For each component, get its type and its name
+        for component in components:
+            comp_type = TYPE_KEY_MAP.get(component["type"], component["type"])
+            name = component["name"]
+            component["type"] = comp_type
+
+            # If the component type has not been processed yet, create it
+            if comp_type not in structured_data:
+                structured_data[comp_type] = {}
+
+            # Add the new component to the structured data under its type and its name
+            structured_data[comp_type][name] = component
+
+    return structured_data
 
 
 def select_tables(html):
@@ -30,53 +47,8 @@ def process_table_data(table):
     title = table.find('th').get_text(strip=True)
     print(f"Table: {title}")
 
-    # Configure which columns to skip in the tables when reading stats
-    # (number to skip, index of the row that contains the name)
-    table_configs = {
-        "Drivers (DV)": {"skip_cols": 2, "name_index": 1},
-        "Bodies (BD)": {"skip_cols": 1, "name_index": 0},
-        "Tires (TR)": {"skip_cols": 1, "name_index": 0},
-        "Gliders (WG)": {"skip_cols": 1, "name_index": 0},
-    }
-
-    # The stats that are shared by all component types
-    shared_stats = [
-        ("Speed", "Ground (SL)"),
-        ("Speed", "Water (SW)"),
-        ("Speed", "Air (SA)"),
-        ("Speed", "Anti-Gravity (SG)"),
-        ("Acceleration", None),
-        ("Weight", None),
-        ("Handling", "Ground (TL)"),
-        ("Handling", "Water (TW)"),
-        ("Handling", "Air (TA)"),
-        ("Handling", "Anti-Gravity (TG)"),
-        ("Traction (Off-Road)", None),
-        ("Mini-Turbo", None),
-        ("Invincibility", None),
-        ("Traction (On-Road)", None)
-    ]
-
-    # Map the stat stings in the html to their JSON values
-    stat_key_map = {
-        "Ground (SL)": "Ground",
-        "Water (SW)": "Water",
-        "Air (SA)": "Air",
-        "Anti-Gravity (SG)": "AntiGravity",
-        "Acceleration": "Acceleration",
-        "Weight": "Weight",
-        "Ground (TL)": "Ground",
-        "Water (TW)": "Water",
-        "Air (TA)": "Air",
-        "Anti-Gravity (TG)": "AntiGravity",
-        "Traction (Off-Road)": "OffRoadTraction",
-        "Mini-Turbo": "MiniTurbo",
-        "Invincibility": "Invincibility",
-        "Traction (On-Road)": "OnRoadTraction"
-    }
-
     # Check the table has an associated config
-    config = table_configs.get(title)
+    config = TABLE_CONFIGS.get(title)
     if not config:
         print(f"No config found for table: {title}")
         return
@@ -87,6 +59,9 @@ def process_table_data(table):
 
     # Get all the standard rows from the table, skipping the headers.
     rows = table.find_all('tr')[2:]
+
+    # Create empty components array to store the components from this table
+    components = []
 
     # Loop though each row in the table
     for row in rows:
@@ -108,17 +83,18 @@ def process_table_data(table):
         stats = {}
 
         # Iterate though each pair from the shared stats and the cells
-        for (group, sub), cell in zip(shared_stats, stat_cells):
-
+        for (group, sub), cell in zip(SHARED_STATS, stat_cells):
+            print(f"Processing: Group = {group}, Sub = {sub}, Value = {cell.get_text(strip=True)}")
             # Get the text content from that cell and convert it to an integer
             value = cell.get_text(strip=True)
             try:
                 value = int(value)
             except ValueError:
+                print(f"Skipping non-integer value: {cell.get_text(strip=True)}")
                 continue
 
             # Get the mapped stat key
-            mapped_key = stat_key_map.get(sub or group)
+            mapped_key = STAT_KEY_MAP.get(sub or group)
 
             if not mapped_key:
                 continue  # Skip if there's no mapped key
@@ -147,12 +123,14 @@ def process_table_data(table):
             if size:
                 component["size"] = size
 
-            print(component)
+            components.append(component)
+
+    return components
 
 
 '''
-    Problems:
-    
-    - Separate function into separate smaller functions
+    Issues:
+    - Only the first row with the same size in the driver table is being checked 
+    since the cell spans across all rows with the same value
 
 '''
