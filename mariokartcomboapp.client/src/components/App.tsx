@@ -117,9 +117,9 @@ function App() {
       </p>
       <p>
         {" "}
-        All stats are taken from{" "}
+        All stats are taken from the{" "}
         <a href="https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics">
-          the Mario Wiki
+          Super Mario Wiki
         </a>
       </p>
     </div>
