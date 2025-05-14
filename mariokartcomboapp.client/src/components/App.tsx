@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "../styles/App.css";
 import Footer from "./Footer";
+import LoadMessage from "./LoadMessage";
 
 interface Combo {
   mkComponents: {
@@ -51,15 +52,7 @@ function App() {
 
   const contents =
     combo === null ? (
-      <p>
-        <em>
-          Loading... Please refresh once the ASP.NET backend has started. See{" "}
-          <a href="https://aka.ms/jspsintegrationreact">
-            https://aka.ms/jspsintegrationreact
-          </a>{" "}
-          for more details.
-        </em>
-      </p>
+      <LoadMessage />
     ) : (
       <>
         <h2>Components:</h2>
