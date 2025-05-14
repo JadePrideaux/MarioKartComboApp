@@ -1,0 +1,17 @@
+.statsTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+.statsTable th,
+.statsTable td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+thead th {
+  background-color: #1a1a1a;
+  color: white;
+}

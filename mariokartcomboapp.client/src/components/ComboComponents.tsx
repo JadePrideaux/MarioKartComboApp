@@ -1,3 +1,5 @@
+import styles from "../styles/ComboComponents.module.css";
+
 interface ComboComponents {
   mkComponents: {
     [key: string]: {
@@ -16,23 +18,24 @@ const ComboComponents = (props: Props) => {
   return (
     <>
       <h2>Components:</h2>
-      <ul>
+      <div className={styles.componentsContainer}>
         {Object.entries(props.mkComponents).map(([key, component]) => (
-          <li key={key}>
-            <b>{component.type}</b>: {component.name}
-            {/*If there is an imgURL, render the image*/}
+          <div key={key} className={styles.componentCard}>
+            <span className={styles.componentType}>{component.type}</span>
             {component.imgURL && (
               <div>
                 <img
                   src={component.imgURL}
                   alt={component.name}
-                  style={{ width: "100px", height: "auto" }}
+                  className={styles.componentImage}
                 />
               </div>
             )}
-          </li>
+            <span className={styles.componentName}>{component.name}</span>
+            {/*If there is an imgURL, render the image*/}
+          </div>
         ))}
-      </ul>
+      </div>
     </>
   );
 };
