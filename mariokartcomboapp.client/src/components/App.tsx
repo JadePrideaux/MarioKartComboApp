@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "../styles/App.css";
+import Footer from "./Footer";
 
 interface Combo {
   mkComponents: {
@@ -107,22 +108,12 @@ function App() {
     );
 
   return (
-    <div>
+    <>
       <h1 id="tableLabel">Mario Kart 8 Deluxe Combo</h1>
       <button onClick={fetchCombo}>Get Random Combo</button>
       {contents}
-      <p>
-        Combo stats are a sum of the components, plus three, then divided by
-        four.
-      </p>
-      <p>
-        {" "}
-        All stats are taken from the{" "}
-        <a href="https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics">
-          Super Mario Wiki
-        </a>
-      </p>
-    </div>
+      <Footer />
+    </>
   );
 }
 
