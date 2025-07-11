@@ -33,27 +33,35 @@ interface Combo {
 export const useCombo = () => {
   const [combo, setCombo] = useState<Combo | null>(null);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   // only create a new combo if necessary (useCallback), prevents unnecessary repeated calls
   const fetchCombo = useCallback(async () => {
-    // show the loading component
     setLoading(true);
 
     try {
       const response = await fetch("combo/randomcombo");
-      if (response.ok) {
-        const data = await response.json();
-        setCombo(data);
-      } else {
-        console.error("Failed to fetch combo data");
+
+      if (!response.ok) {
+        console.error(
+          `Server returned status ${response.status}: ${response.statusText}`
+        );
+        setError("Could not load combo. Please try again.");
+        setCombo(null);
+        return;
       }
+      const data = await response.json();
+      setCombo(data);
+      setError(null);
     } catch (e) {
-      console.error(e);
+      console.error("Fetch error:", e);
+      setError("Could not load combo. Please try again.");
+      setCombo(null);
     } finally {
       setLoading(false);
     }
   }, []);
 
   // returns the combo, the loading state and the fetch combo method
-  return { combo, loading, fetchCombo };
+  return { combo, loading, fetchCombo, error };
 };

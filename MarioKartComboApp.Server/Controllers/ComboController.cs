@@ -17,7 +17,7 @@ namespace MarioKartComboApp.Server.Controllers
         private readonly IMKComponentDataLoader _dataLoader = dataLoader;
 
         [HttpGet("combo", Name = "GetCombo")]
-        public async Task<Combo> Get()
+        public async Task<ActionResult<Combo>> Get()
         {
             var components = await _dataLoader.LoadComponentAsync()
                 ?? throw new Exception("Failed to load components.");
@@ -35,7 +35,7 @@ namespace MarioKartComboApp.Server.Controllers
         }
 
         [HttpGet("randomcombo", Name = "GetRandomCombo")]
-        public async Task<Combo> GetRandom()
+        public async Task<ActionResult<Combo>> GetRandom()
         {
             var components = await _dataLoader.LoadComponentAsync()
                 ?? throw new Exception("Failed to load components.");
